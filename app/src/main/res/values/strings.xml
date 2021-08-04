@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Hotel Imperial</string>
+    <string name="titulo_hotel">Hotel</string>
+    <string name="titulo_reserva">Reserva</string>
+    <string name="titulo_servicos">Serviços</string>
+    <string name="titulo_acomodacoes">Acomodações</string>
+    <string name="titulo_explore">Explore</string>
+    <string name="titulo_contato">Contato</string>
+    <string name="txt_creditos">APP desenvolvido por Darlan Araujo</string>
+    <string name="txt_convida">Comemorando mais de 70 anos de hospitalidade, o Hotel Imperial é uma
+        empresa família de hotéis localizado na cidade de Porto Seguro que oferece acomodações para
+        todos os tipos de viajantes. Veja conhecer!</string>
+</resources>
