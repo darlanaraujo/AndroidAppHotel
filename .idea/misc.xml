@@ -5,8 +5,13 @@
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.24270833333333333" />
         <entry key="app/src/main/res/drawable/borda_arredondada.xml" value="0.24270833333333333" />
+        <entry key="app/src/main/res/drawable/ic_login.xml" value="0.24270833333333333" />
+        <entry key="app/src/main/res/drawable/ic_login_user.xml" value="0.24270833333333333" />
+        <entry key="app/src/main/res/drawable/ic_menu.xml" value="0.24270833333333333" />
         <entry key="app/src/main/res/drawable/slide_fotos.xml" value="0.24270833333333333" />
-        <entry key="app/src/main/res/layout/tela_principal.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/tela_principal.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/topo.xml" value="0.33" />
+        <entry key="app/src/main/res/menu/menu.xml" value="0.25" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1375" />
       </map>
     </option>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Menu que define uma busca no App -->
+    <item
+        android:id="@+id/app_bar_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="@string/txt_buscar"
+        app:actionViewClass="android.widget.SearchView" />
+
+
+    <!-- Menu que define o acesso ao usuário do App -->
+    <group android:checkableBehavior="single">
+
+        <item android:title="@string/titulo_usuario">
+
+            <menu>
+
+                <item
+                    android:id="@+id/menu_login"
+                    android:icon="@drawable/ic_login"
+                    android:title="@string/titulo_login" />
+                <item
+                    android:id="@+id/menu_profile"
+                    android:icon="@drawable/ic_login"
+                    android:title="@string/titulo_profile" />
+                <item
+                    android:id="@+id/menu_logoff"
+                    android:icon="@drawable/ic_login"
+                    android:title="@string/titulo_logoff" />
+
+            </menu>
+
+        </item>
+
+    </group>
+
+    <!-- Menu que define o acesso as páginas do App -->
+    <group android:checkableBehavior="single">
+
+        <item android:title="@string/titulo_acesso">
+
+            <menu>
+
+                <item
+                    android:id="@+id/menu_home"
+                    android:icon="@drawable/ic_home"
+                    android:title="@string/titulo_home" />
+                <item
+                    android:id="@+id/menu_hotel"
+                    android:icon="@drawable/ic_home"
+                    android:title="@string/titulo_hotel" />
+                <item
+                    android:id="@+id/menu_reserva"
+                    android:icon="@drawable/ic_home"
+                    android:title="@string/titulo_reserva" />
+                <item
+                    android:id="@+id/menu_servicos"
+                    android:icon="@drawable/ic_home"
+                    android:title="@string/titulo_servicos" />
+                <item
+                    android:id="@+id/menu_acomodacoes"
+                    android:icon="@drawable/ic_home"
+                    android:title="@string/titulo_acomodacoes" />
+                <item
+                    android:id="@+id/menu_explore"
+                    android:icon="@drawable/ic_home"
+                    android:title="@string/titulo_explore" />
+                <item
+                    android:id="@+id/menu_contato"
+                    android:icon="@drawable/ic_home"
+                    android:title="@string/titulo_contato" />
+
+            </menu>
+
+        </item>
+
+    </group>
+
+    <!-- Menu que define o acesso as mídias sociais do App -->
+    <item android:title="@string/titulo_midias">
+
+        <menu>
+
+            <item
+                android:id="@+id/menu_facebook"
+                android:icon="@drawable/ic_home"
+                android:title="@string/txt_facebook" />
+            <item
+                android:id="@+id/menu_instagram"
+                android:icon="@drawable/ic_home"
+                android:title="@string/txt_instagram" />
+            <item
+                android:id="@+id/menu_twitter"
+                android:icon="@drawable/ic_home"
+                android:title="@string/txt_twitter" />
+
+        </menu>
+
+    </item>
+
+    <!-- Menu que define o fechamento do App -->
+    <item android:title="@string/titulo_sair">
+
+        <menu>
+
+            <item
+                android:id="@+id/menu_sair"
+                android:icon="@android:drawable/ic_lock_power_off"
+                android:title="@string/txt_sair" />
+
+        </menu>
+
+    </item>
+
+</menu>
