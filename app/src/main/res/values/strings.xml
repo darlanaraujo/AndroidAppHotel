@@ -22,8 +22,8 @@
     <string name="txt_convida">Comemorando mais de 70 anos de hospitalidade, o Hotel Imperial é uma
         empresa família de hotéis localizado na cidade de Porto Seguro que oferece acomodações para
         todos os tipos de viajantes. Veja conhecer!</string>
-    <string name="abrir_navegacao">Abrir Navegação</string>
-    <string name="fechar_navegacao">Fechar Navegação</string>
+    <string name="txt_abrir_navegacao">Abrir Navegação</string>
+    <string name="txt_fechar_navegacao">Fechar Navegação</string>
     <string name="txt_menu">Menu</string>
     <string name="txt_buscar">Buscar</string>
 </resources>

@@ -10,9 +10,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidAppHotel">
         <activity
+            android:name=".TelaLogin"
+            android:exported="true" />
+        <activity
+            android:name=".TelaContato"
+            android:exported="true" />
+        <activity
+            android:name=".TelaExplore"
+            android:exported="true" />
+        <activity
+            android:name=".TelaAcomodacoes"
+            android:exported="true" />
+        <activity
+            android:name=".TelaServicos"
+            android:exported="true" />
+        <activity
+            android:name=".TelaReserva"
+            android:exported="true" />
+        <activity
+            android:name=".TelaHotel"
+            android:exported="true" />
+        <activity
             android:name=".TelaPrincipal"
-            android:exported="true"
             android:configChanges="orientation"
+            android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

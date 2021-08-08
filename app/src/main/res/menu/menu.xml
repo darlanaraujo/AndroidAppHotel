@@ -3,6 +3,7 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+
     <!-- Menu que define uma busca no App -->
     <item
         android:id="@+id/app_bar_search"
@@ -24,11 +25,11 @@
                     android:title="@string/titulo_login" />
                 <item
                     android:id="@+id/menu_profile"
-                    android:icon="@drawable/ic_login"
+                    android:icon="@drawable/ic_profile"
                     android:title="@string/titulo_profile" />
                 <item
                     android:id="@+id/menu_logoff"
-                    android:icon="@drawable/ic_login"
+                    android:icon="@drawable/ic_exit"
                     android:title="@string/titulo_logoff" />
 
             </menu>
@@ -50,27 +51,27 @@
                     android:title="@string/titulo_home" />
                 <item
                     android:id="@+id/menu_hotel"
-                    android:icon="@drawable/ic_home"
+                    android:icon="@drawable/ic_hotel"
                     android:title="@string/titulo_hotel" />
                 <item
                     android:id="@+id/menu_reserva"
-                    android:icon="@drawable/ic_home"
+                    android:icon="@drawable/ic_calendar"
                     android:title="@string/titulo_reserva" />
                 <item
                     android:id="@+id/menu_servicos"
-                    android:icon="@drawable/ic_home"
+                    android:icon="@drawable/ic_servicos"
                     android:title="@string/titulo_servicos" />
                 <item
                     android:id="@+id/menu_acomodacoes"
-                    android:icon="@drawable/ic_home"
+                    android:icon="@drawable/ic_acomodacoes"
                     android:title="@string/titulo_acomodacoes" />
                 <item
                     android:id="@+id/menu_explore"
-                    android:icon="@drawable/ic_home"
+                    android:icon="@drawable/ic_explore"
                     android:title="@string/titulo_explore" />
                 <item
                     android:id="@+id/menu_contato"
-                    android:icon="@drawable/ic_home"
+                    android:icon="@drawable/ic_contato"
                     android:title="@string/titulo_contato" />
 
             </menu>

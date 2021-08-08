@@ -4,34 +4,16 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.constraintlayout.motion.widget.Animatable;
-import androidx.core.app.ActivityCompat;
-import androidx.core.app.ActivityOptionsCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import android.app.ActivityOptions;
-import android.content.Context;
-import android.content.Intent;
-import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageButton;
-import android.widget.ImageView;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class TelaPrincipal extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
-
-    // Atributos dos botões;
-    ImageButton btnHotel;
-
-    // Atributos variados
-    ImageView imgSlide;
-    Intent intent;
+public class TelaHotel extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     // Atributos do menu;
     DrawerLayout drawerLayout;
@@ -41,10 +23,7 @@ public class TelaPrincipal extends AppCompatActivity implements NavigationView.O
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tela_principal);
-
-        // Ligação dos botões do menu;
-        btnHotel = findViewById(R.id.btnHotel);
+        setContentView(R.layout.activity_tela_hotel);
 
         // Ligação dos objetos com os atributos da tela;
         drawerLayout = findViewById(R.id.draw_layout); // Corpo do menu;
@@ -63,56 +42,15 @@ public class TelaPrincipal extends AppCompatActivity implements NavigationView.O
         navigationView.bringToFront();
         navigationView.setNavigationItemSelectedListener(this);
 
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        //getSupportActionBar().setIcon(R.mipmap.ic_launcher);
-        getSupportActionBar().setTitle(""); // Comando para deixar o titulo vazio;
-
-
-
-        // Comando que permite gerar um slide nas fotos;
-        imgSlide = findViewById(R.id.imgSlide);
-        AnimationDrawable animacao = (AnimationDrawable) imgSlide.getDrawable();
-        animacao.start();
-
     }
 
-    // BOTÕES DOS MENUS NA TELA ====================================================================
-    public void setHotel(View view){
-        setAnimacao(TelaHotel.class);
+    @Override
+    public void finish(){
+        super.finish();
+
+        overridePendingTransition(R.anim.mover_direita, R.anim.fade_out);
     }
 
-    public void setReserva(View view){
-        setAnimacao(TelaReserva.class);
-    }
-
-    public void setServicos(View view){
-        setAnimacao(TelaServicos.class);
-    }
-
-    public void setAcomodacoes(View view){
-        setAnimacao(TelaAcomodacoes.class);
-    }
-
-    public void setExplore(View view){
-        setAnimacao(TelaExplore.class);
-    }
-
-    public void setContato(View view){
-        setAnimacao(TelaContato.class);
-    }
-
-    public void setLogin(View view){
-        setAnimacao(TelaLogin.class);
-    }
-
-    // FERRAMENTAS =================================================================================
-    public void setAnimacao(Class tela){
-        intent = new Intent(this, tela);
-        ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.fade_in, R.anim.mover_esquerda);
-        ActivityCompat.startActivity(this, intent, animacao.toBundle());
-    }
-
-    // Esse método foi implementado automaticamente ao adicionar o comando para mostrar uma seleção no menu ao escolher uma opção;
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
 
@@ -124,18 +62,6 @@ public class TelaPrincipal extends AppCompatActivity implements NavigationView.O
         drawerLayout.closeDrawer(GravityCompat.START);
 
         return true;
-    }
-
-
-    // Método que faz com que a barra do menu superior sobreponha a barra de navegação
-    @Override
-    public void onBackPressed() {
-
-        if(drawerLayout.isDrawerOpen(GravityCompat.START)){
-            drawerLayout.closeDrawer(GravityCompat.START);
-        } else{
-            super.onBackPressed();
-        }
     }
 
     /** Método que oculta a barra de navegação no aparelho;
@@ -157,7 +83,4 @@ public class TelaPrincipal extends AppCompatActivity implements NavigationView.O
 
         decorView.setSystemUiVisibility(uiOptions);
     }
-
-
-
 }
