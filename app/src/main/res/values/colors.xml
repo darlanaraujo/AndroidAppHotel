@@ -9,5 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="padrao">#062544</color>
     <color name="padrao_dark">#01162B</color>
+    <color name="padrao_dourado_dark">#AA7E09</color>
+    <color name="padrao_dourado">#F0CA65</color>
     <color name="secundaria">#D7d7d7</color>
 </resources>

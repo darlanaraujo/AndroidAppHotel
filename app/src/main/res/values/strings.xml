@@ -26,4 +26,38 @@
     <string name="txt_fechar_navegacao">Fechar Navegação</string>
     <string name="txt_menu">Menu</string>
     <string name="txt_buscar">Buscar</string>
+    <string name="txt_hotel">O Hotel Imperial convida você a conhecer a nossa história!</string>
+    <string name="txt_texto_hotel">
+        Temos o orgulho em estar entre os <b>06 melhores hotéis no litoral do Brasil</b>. Resultado
+        de seriedade, profissionalismo e excelência da nossa equipe altamente qualificada para
+        atender hóspedes a lazer ou negócios, tornando sua estadia uma experiência inesquecível.
+        \n\n
+        Somos o primeiro hotel da orla de Porto Seguro, localizado no centro. Descubra o <b>Hotel
+        Imperial Peixoto Araujo</b>, a poucos passos de farmácias, grandes redes mundiais de fast food,
+        bancos, aeroporto e afins.
+        \n\n
+        Oferecemos apartamentos inteiramente equipados para seu conforto, salas de reuniões, suítes
+        especiais, hidromassagem aquecida, piscina adulto e infantil, academia climatizada, salão
+        de jogos, serviço de mensageiro com depósito de bagagem, room service e, para os amantes da
+        boa gastronomia, um cardápio exclusivo assinado pelo chef Luciano Muradas.
+        \n\n
+        Junto a nossa infraestrutura, possuímos uma Boutique charmosa que oferece o conforto em
+        adquirir peças onde remeta uma excelente recordação da sua viagem.</string>
+    <string name="titulo_cidade">A CIDADE</string>
+    <string name="txt_cidade">
+        Com mais de 140 mil habitantes, <br>Porto Seguro</br> é a porta de entrada do Nordeste brasileiro,
+        são aproximadamente 85 km de belas praias. O destino é privilegiado por sua localização
+        geográfica mundialmente conhecida como <br>“Terra Mãe do Brasil”</br>.
+        \n\n
+        Representamos uma vasta riqueza histórica e cultural, aqui você encontra o <br>primeiro santuário
+        do Brasil</br>, o centro histórico no alto da cidade onde mantem viva a origem do povo brasileiro,
+        além claro, da <br>Reserva Indígena Pataxó da Jaqueira</br> com sua cultura que permite o contato
+        único com as tradições dos mais antigos povos do Brasil.
+        \n\n
+        Como tanta diversidade <br>Porto Seguro</br> é um destino capaz de exceder as expectativas de
+        qualquer visitante.
+    </string>
+    <string name="txt_venha">Venha nos Visitar!</string>
+    <string name="titulo_fazer_reserva">FAZER RESERVA</string>
+    <string name="txt_voltar">Voltar</string>
 </resources>

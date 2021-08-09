@@ -12,10 +12,10 @@
         <entry key="app/src/main/res/layout/activity_tela_acomodacoes.xml" value="0.2265625" />
         <entry key="app/src/main/res/layout/activity_tela_contato.xml" value="0.2125" />
         <entry key="app/src/main/res/layout/activity_tela_explore.xml" value="0.2125" />
-        <entry key="app/src/main/res/layout/activity_tela_hotel.xml" value="0.2125" />
+        <entry key="app/src/main/res/layout/activity_tela_hotel.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_tela_login.xml" value="0.2125" />
         <entry key="app/src/main/res/layout/activity_tela_reserva.xml" value="0.2125" />
-        <entry key="app/src/main/res/layout/activity_tela_servicos.xml" value="0.2125" />
+        <entry key="app/src/main/res/layout/activity_tela_servicos.xml" value="0.67" />
         <entry key="app/src/main/res/layout/tela_principal.xml" value="0.25" />
         <entry key="app/src/main/res/layout/topo.xml" value="0.33" />
         <entry key="app/src/main/res/menu/menu.xml" value="0.25" />

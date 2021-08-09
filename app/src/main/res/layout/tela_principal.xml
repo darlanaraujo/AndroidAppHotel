@@ -47,6 +47,26 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
+            android:id="@+id/imageLinha1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/linha1"
+            app:layout_constraintBottom_toTopOf="@+id/imageLinha2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageLinha2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/linha2"
+            app:layout_constraintBottom_toBottomOf="@+id/imageFundo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
             android:id="@+id/imageLogo"
             android:layout_width="wrap_content"
             android:layout_height="90dp"
@@ -154,6 +174,7 @@
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
                         android:contentDescription="@string/titulo_reserva"
+                        android:onClick="setReserva"
                         android:scaleType="centerInside"
                         android:src="@drawable/btn_reserva" />
 
@@ -163,6 +184,7 @@
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
                         android:contentDescription="@string/titulo_servicos"
+                        android:onClick="setServicos"
                         android:scaleType="centerInside"
                         android:src="@drawable/btn_servico" />
 
@@ -172,6 +194,7 @@
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
                         android:contentDescription="@string/titulo_acomodacoes"
+                        android:onClick="setAcomodacoes"
                         android:scaleType="centerInside"
                         android:src="@drawable/btn_acomodacoes" />
 
@@ -181,6 +204,7 @@
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
                         android:contentDescription="@string/titulo_explore"
+                        android:onClick="setExplore"
                         android:scaleType="centerInside"
                         android:src="@drawable/btn_explore" />
 
@@ -190,6 +214,7 @@
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
                         android:contentDescription="@string/titulo_contato"
+                        android:onClick="setContato"
                         android:scaleType="centerInside"
                         android:src="@drawable/btn_contato" />
                 </GridLayout>

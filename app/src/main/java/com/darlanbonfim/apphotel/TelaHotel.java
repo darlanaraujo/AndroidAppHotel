@@ -10,6 +10,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -20,10 +21,15 @@ public class TelaHotel extends AppCompatActivity implements NavigationView.OnNav
     NavigationView navigationView;
     Toolbar toolbar;
 
+    // Atributos
+    Button btnVoltar, btnReserva;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_hotel);
+
+        // CONFIGURAÇÃO PADRÃO DAS TELAS ===========================================================
 
         // Ligação dos objetos com os atributos da tela;
         drawerLayout = findViewById(R.id.draw_layout); // Corpo do menu;
@@ -42,8 +48,23 @@ public class TelaHotel extends AppCompatActivity implements NavigationView.OnNav
         navigationView.bringToFront();
         navigationView.setNavigationItemSelectedListener(this);
 
+        // CONFIGURAÇÕES ESPECIFICAS DA TELA =======================================================
+
+        // Configurações do botão de voltar;
+        btnVoltar = findViewById(R.id.btnVoltar);
+        btnVoltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
+        // Configurações do botão de reserva;
+        btnReserva = findViewById(R.id.btnReserva);
+
     }
 
+    // CONFIGURAÇÃO PADRÃO DAS TELAS ===========================================================
     @Override
     public void finish(){
         super.finish();
@@ -83,4 +104,7 @@ public class TelaHotel extends AppCompatActivity implements NavigationView.OnNav
 
         decorView.setSystemUiVisibility(uiOptions);
     }
+
+    // CONFIGURAÇÕES ESPECIFICAS DA TELA =======================================================
+
 }

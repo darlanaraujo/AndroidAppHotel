@@ -158,6 +158,4 @@ public class TelaPrincipal extends AppCompatActivity implements NavigationView.O
         decorView.setSystemUiVisibility(uiOptions);
     }
 
-
-
 }
