@@ -124,8 +124,9 @@ public class TelaPrincipal extends AppCompatActivity implements NavigationView.O
     // FERRAMENTAS =================================================================================
     public void setAnimacao(Class tela){
         intent = new Intent(this, tela);
-        ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.fade_in, R.anim.mover_esquerda);
+        ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), R.anim.fade_in, R.anim.anim_cair);
         ActivityCompat.startActivity(this, intent, animacao.toBundle());
+
     }
 
     // Esse método foi implementado automaticamente ao adicionar o comando para mostrar uma seleção no menu ao escolher uma opção;

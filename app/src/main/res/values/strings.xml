@@ -45,16 +45,16 @@
         adquirir peças onde remeta uma excelente recordação da sua viagem.</string>
     <string name="titulo_cidade">A CIDADE</string>
     <string name="txt_cidade">
-        Com mais de 140 mil habitantes, <br>Porto Seguro</br> é a porta de entrada do Nordeste brasileiro,
+        Com mais de 140 mil habitantes, <b>Porto Seguro</b> é a porta de entrada do Nordeste brasileiro,
         são aproximadamente 85 km de belas praias. O destino é privilegiado por sua localização
-        geográfica mundialmente conhecida como <br>“Terra Mãe do Brasil”</br>.
+        geográfica mundialmente conhecida como <b>“Terra Mãe do Brasil”</b>.
         \n\n
-        Representamos uma vasta riqueza histórica e cultural, aqui você encontra o <br>primeiro santuário
-        do Brasil</br>, o centro histórico no alto da cidade onde mantem viva a origem do povo brasileiro,
-        além claro, da <br>Reserva Indígena Pataxó da Jaqueira</br> com sua cultura que permite o contato
+        Representamos uma vasta riqueza histórica e cultural, aqui você encontra o <b>primeiro santuário
+        do Brasil</b>, o centro histórico no alto da cidade onde mantem viva a origem do povo brasileiro,
+        além claro, da <b>Reserva Indígena Pataxó da Jaqueira</b> com sua cultura que permite o contato
         único com as tradições dos mais antigos povos do Brasil.
         \n\n
-        Como tanta diversidade <br>Porto Seguro</br> é um destino capaz de exceder as expectativas de
+        Como tanta diversidade <b>Porto Seguro</b> é um destino capaz de exceder as expectativas de
         qualquer visitante.
     </string>
     <string name="txt_venha">Venha nos Visitar!</string>
@@ -63,4 +63,13 @@
     <string name="txt_entrar">Entrar</string>
     <string name="txt_cadastrar">Ainda não é cadastrado?</string>
     <string name="titulo_cadastrar">Cadastrar-se</string>
+    <string name="servico_quarto">
+        O requinte e a exclusividade do <b>Hotel Imperial</b> fica ainda melhor com os serviços
+        de quarto oferecidos nos apartamentos. Nós disponibiliza aos hóspedes a opção de room service.
+        \n\n
+        Assim, além de desfrutar do sistema All-Inclusive com bares e restaurante principal com a
+        <b>alta gastronomia</b>, os viajantes também podem curtir o conforto dos apartamentos sem
+        deixar de experimentar pratos deliciosos.
+        \n
+    </string>
 </resources>

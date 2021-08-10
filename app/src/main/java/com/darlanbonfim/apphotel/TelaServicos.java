@@ -2,17 +2,22 @@ package com.darlanbonfim.apphotel;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.google.android.material.navigation.NavigationView;
@@ -26,10 +31,13 @@ public class TelaServicos extends AppCompatActivity implements NavigationView.On
 
     // Atributos
     Button btnVoltar, btnReserva;
+    ImageButton btnServQuarto;
 
     // Animação;
     Animation animItens;
     LinearLayout layConteudo;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +78,9 @@ public class TelaServicos extends AppCompatActivity implements NavigationView.On
                 finish();
             }
         });
+
+        // Botão dos serviços;
+        btnServQuarto = findViewById(R.id.btnServQuarto);
 
     }
 
@@ -115,5 +126,27 @@ public class TelaServicos extends AppCompatActivity implements NavigationView.On
     }
 
     // CONFIGURAÇÕES ESPECIFICAS DA TELA =======================================================
+
+    public void setServQuarto(View view){
+
+        // Comando para mostrar uma imagem dentro de uma Alerta;
+        LayoutInflater imgServicos = LayoutInflater.from(TelaServicos.this);
+        final View imagem = imgServicos.inflate(R.layout.imagem_pop, null);
+        AlertDialog.Builder pop = new AlertDialog.Builder(TelaServicos.this);
+
+        pop.setTitle("Serviço de Quarto");
+        pop.setIcon(R.drawable.icon_servico_quarto);
+        pop.setMessage(R.string.servico_quarto);
+        pop.setView(imagem);
+
+        pop.setNeutralButton("Voltar", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+
+            }
+        });
+
+        pop.show();
+    }
 
 }

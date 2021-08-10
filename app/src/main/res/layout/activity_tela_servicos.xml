@@ -154,6 +154,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:onClick="setServQuarto"
                         android:scaleType="centerInside"
                         app:srcCompat="@drawable/btn_serv_quarto" />
 

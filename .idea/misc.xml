@@ -18,6 +18,8 @@
         <entry key="app/src/main/res/layout/activity_tela_reserva.xml" value="0.2125" />
         <entry key="app/src/main/res/layout/activity_tela_servicos.xml" value="0.25" />
         <entry key="app/src/main/res/layout/corpo.xml" value="0.2265625" />
+        <entry key="app/src/main/res/layout/imagem_alerta.xml" value="0.24114583333333334" />
+        <entry key="app/src/main/res/layout/imagem_pop.xml" value="0.2265625" />
         <entry key="app/src/main/res/layout/tela_principal.xml" value="0.25" />
         <entry key="app/src/main/res/layout/topo.xml" value="0.33" />
         <entry key="app/src/main/res/menu/menu.xml" value="0.25" />
