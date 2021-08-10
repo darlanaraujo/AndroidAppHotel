@@ -19,8 +19,12 @@ import android.os.Handler;
 import android.os.Message;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.GridLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -37,6 +41,11 @@ public class TelaPrincipal extends AppCompatActivity implements NavigationView.O
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
+
+    // Animação
+    Animation animItens;
+    GridLayout gridMenu;
+    LinearLayout layConteudo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +76,13 @@ public class TelaPrincipal extends AppCompatActivity implements NavigationView.O
         //getSupportActionBar().setIcon(R.mipmap.ic_launcher);
         getSupportActionBar().setTitle(""); // Comando para deixar o titulo vazio;
 
+
+        // Animação;
+        animItens = AnimationUtils.loadAnimation(this, R.anim.anim_itens);
+        gridMenu = findViewById(R.id.gridMenu);
+        layConteudo = findViewById(R.id.layConteudo);
+        gridMenu.setAnimation(animItens);
+        layConteudo.setAnimation(animItens);
 
 
         // Comando que permite gerar um slide nas fotos;

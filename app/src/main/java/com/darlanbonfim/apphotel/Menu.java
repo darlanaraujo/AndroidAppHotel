@@ -68,7 +68,7 @@ public class Menu {
 
     public void setAnimacao(Context context, Class tela){
         intent = new Intent(context, tela);
-        ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(context, R.anim.fade_in, R.anim.mover_esquerda);
+        ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(context, R.anim.fade_in, R.anim.anim_cair);
         ActivityCompat.startActivity(context, intent, animacao.toBundle());
     }
 

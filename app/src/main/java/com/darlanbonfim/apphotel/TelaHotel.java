@@ -10,7 +10,11 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -23,6 +27,10 @@ public class TelaHotel extends AppCompatActivity implements NavigationView.OnNav
 
     // Atributos
     Button btnVoltar, btnReserva;
+
+    // Animações
+    LinearLayout layConteudo;
+    Animation animItens;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +70,11 @@ public class TelaHotel extends AppCompatActivity implements NavigationView.OnNav
         // Configurações do botão de reserva;
         btnReserva = findViewById(R.id.btnReserva);
 
+        // Animações;
+        layConteudo = findViewById(R.id.layConteudo);
+        animItens = AnimationUtils.loadAnimation(this, R.anim.anim_itens);
+        layConteudo.setAnimation(animItens);
+
     }
 
     // CONFIGURAÇÃO PADRÃO DAS TELAS ===========================================================
@@ -69,7 +82,7 @@ public class TelaHotel extends AppCompatActivity implements NavigationView.OnNav
     public void finish(){
         super.finish();
 
-        overridePendingTransition(R.anim.mover_direita, R.anim.fade_out);
+        overridePendingTransition(R.anim.fade_in, R.anim.anim_cair);
     }
 
     @Override

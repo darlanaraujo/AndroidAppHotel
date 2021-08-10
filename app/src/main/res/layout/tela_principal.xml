@@ -151,6 +151,7 @@
                 android:orientation="vertical">
 
                 <GridLayout
+                    android:id="@+id/gridMenu"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
@@ -220,6 +221,7 @@
                 </GridLayout>
 
                 <LinearLayout
+                    android:id="@+id/layConteudo"
                     android:layout_width="300dp"
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"

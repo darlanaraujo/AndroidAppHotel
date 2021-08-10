@@ -5,7 +5,7 @@
     android:id="@+id/draw_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TelaHotel"
+    tools:context=".TelaServicos"
     tools:openDrawer="start">
 
     <!-- Comando que coloca o menu na tela principal -->
@@ -22,8 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-
-        <!-- barra superior com icone para chamar a tela -->
+        <!-- Layout do topo do app -->
         <ImageView
             android:id="@+id/imageFundo3"
             android:layout_width="0dp"
@@ -60,7 +59,7 @@
 
         <ImageView
             android:id="@+id/imageView5"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             app:layout_constraintBottom_toBottomOf="@+id/imageFundo3"
@@ -106,6 +105,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <!-- barra superior com icone para chamar a tela -->
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="30dp"
@@ -120,13 +120,157 @@
             app:layout_constraintTop_toTopOf="parent"
             app:navigationIcon="@drawable/ic_menu" />
 
+        <!-- Início do conteúdo do app -->
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageFundo3">
+
+            <LinearLayout
+                android:id="@+id/layConteudo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/foto_dest_servicos" />
+
+                <LinearLayout
+                    android:id="@+id/layBotoes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/btnServQuarto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/btn_serv_quarto" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/btn_open_bar" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/btn_yoga" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/btn_sauna" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/btn_cafe" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/btn_academia" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/btn_baby" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/btn_jogos" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/btn_lazer" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/btn_restaurante" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="@string/txt_venha"
+                    android:textColor="@color/padrao"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnReserva"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/padrao_dourado_dark"
+                    android:text="@string/titulo_fazer_reserva" />
+
+                <Button
+                    android:id="@+id/btnVoltar"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="@string/txt_voltar"
+                    app:icon="@drawable/icon_logof"
+                    app:iconGravity="textStart" />
+
+            </LinearLayout>
+        </ScrollView>
+
         <ImageButton
             android:id="@+id/btnServicos"
             android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:adjustViewBounds="true"
-            android:contentDescription="@string/titulo_hotel"
+            android:contentDescription="@string/titulo_servicos"
             android:scaleType="centerInside"
             android:src="@drawable/btn_servico"
             app:layout_constraintEnd_toEndOf="parent"

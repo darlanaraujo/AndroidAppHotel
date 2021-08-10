@@ -60,4 +60,7 @@
     <string name="txt_venha">Venha nos Visitar!</string>
     <string name="titulo_fazer_reserva">FAZER RESERVA</string>
     <string name="txt_voltar">Voltar</string>
+    <string name="txt_entrar">Entrar</string>
+    <string name="txt_cadastrar">Ainda não é cadastrado?</string>
+    <string name="titulo_cadastrar">Cadastrar-se</string>
 </resources>

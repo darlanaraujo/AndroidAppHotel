@@ -10,6 +10,10 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.Button;
+import android.widget.LinearLayout;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -20,10 +24,19 @@ public class TelaServicos extends AppCompatActivity implements NavigationView.On
     NavigationView navigationView;
     Toolbar toolbar;
 
+    // Atributos
+    Button btnVoltar, btnReserva;
+
+    // Animação;
+    Animation animItens;
+    LinearLayout layConteudo;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_servicos);
+
+        // CONFIGURAÇÃO PADRÃO DAS TELAS ===========================================================
 
         // Ligação dos objetos com os atributos da tela;
         drawerLayout = findViewById(R.id.draw_layout); // Corpo do menu;
@@ -42,13 +55,30 @@ public class TelaServicos extends AppCompatActivity implements NavigationView.On
         navigationView.bringToFront();
         navigationView.setNavigationItemSelectedListener(this);
 
+        // CONFIGURAÇÕES ESPECIFICAS DA TELA =======================================================
+
+        // Animação;
+        animItens = AnimationUtils.loadAnimation(this, R.anim.anim_itens);
+        layConteudo = findViewById(R.id.layConteudo);
+        layConteudo.setAnimation(animItens);
+
+        // Configurações do botão de voltar;
+        btnVoltar = findViewById(R.id.btnVoltar);
+        btnVoltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
     }
 
+    // CONFIGURAÇÃO PADRÃO DAS TELAS ===========================================================
     @Override
     public void finish(){
         super.finish();
 
-        overridePendingTransition(R.anim.mover_direita, R.anim.fade_out);
+        overridePendingTransition(R.anim.fade_in, R.anim.anim_cair);
     }
 
     @Override
@@ -83,4 +113,7 @@ public class TelaServicos extends AppCompatActivity implements NavigationView.On
 
         decorView.setSystemUiVisibility(uiOptions);
     }
+
+    // CONFIGURAÇÕES ESPECIFICAS DA TELA =======================================================
+
 }
