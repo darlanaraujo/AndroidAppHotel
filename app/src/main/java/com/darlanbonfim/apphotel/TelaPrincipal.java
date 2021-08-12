@@ -44,7 +44,6 @@ public class TelaPrincipal extends AppCompatActivity implements NavigationView.O
 
     // Animação
     Animation animItens;
-    GridLayout gridMenu;
     LinearLayout layConteudo;
 
     @Override
@@ -79,9 +78,7 @@ public class TelaPrincipal extends AppCompatActivity implements NavigationView.O
 
         // Animação;
         animItens = AnimationUtils.loadAnimation(this, R.anim.anim_itens);
-        gridMenu = findViewById(R.id.gridMenu);
         layConteudo = findViewById(R.id.layConteudo);
-        gridMenu.setAnimation(animItens);
         layConteudo.setAnimation(animItens);
 
 

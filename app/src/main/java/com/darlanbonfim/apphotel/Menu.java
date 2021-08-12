@@ -70,6 +70,11 @@ public class Menu {
         intent = new Intent(context, tela);
         ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(context, R.anim.fade_in, R.anim.anim_cair);
         ActivityCompat.startActivity(context, intent, animacao.toBundle());
+        try {
+            finalize();
+        } catch (Throwable throwable) {
+            throwable.printStackTrace();
+        }
     }
 
 

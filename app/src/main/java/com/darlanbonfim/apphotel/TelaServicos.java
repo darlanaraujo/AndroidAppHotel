@@ -129,14 +129,12 @@ public class TelaServicos extends AppCompatActivity implements NavigationView.On
 
     public void setServQuarto(View view){
 
-        // Comando para mostrar uma imagem dentro de uma Alerta;
+        // Comando para mostrar uma página dentro de um Alerta;
         LayoutInflater imgServicos = LayoutInflater.from(TelaServicos.this);
-        final View imagem = imgServicos.inflate(R.layout.imagem_pop, null);
+        final View imagem = imgServicos.inflate(R.layout.pop_serv_quarto, null);
         AlertDialog.Builder pop = new AlertDialog.Builder(TelaServicos.this);
 
-        pop.setTitle("Serviço de Quarto");
-        pop.setIcon(R.drawable.icon_servico_quarto);
-        pop.setMessage(R.string.servico_quarto);
+        // Esse comando passa a pagina ser exibida dentro do AlertDialog;
         pop.setView(imagem);
 
         pop.setNeutralButton("Voltar", new DialogInterface.OnClickListener() {

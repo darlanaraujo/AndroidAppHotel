@@ -266,7 +266,7 @@
         </ScrollView>
 
         <ImageButton
-            android:id="@+id/btnServicos"
+            android:id="@+id/btnExplore"
             android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"

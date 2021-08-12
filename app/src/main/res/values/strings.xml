@@ -72,4 +72,46 @@
         deixar de experimentar pratos deliciosos.
         \n
     </string>
+    <string name="titulo_crabralia">SANTA CRUZ CABRÁLIA</string>
+    <string name="texto_cabralia">
+        Município onde foi realizada a <b>primeira missa do Brasil em 1.500</b>. \n
+        Oferece 35 km de <b>praias semi desertas com águas límpidas</b>, que formam piscinas naturais e
+        são protegidas por recifes. \n
+        Na parte alta da cidade o visitante faz um verdadeiro passeio pela história do país,
+        apreciando <b>construções históricas dos séculos XVII e XVIII</b>. Localizado a 20 quilômetros de
+        Porto Seguro.
+    </string>
+    <string name="titulo_coroa">PRAIA DE COROA VERMELHA</string>
+    <string name="texto_coroa">
+        Um verdadeiro <b>paraíso de águas mornas e rasas</b>. Onde é possível nadar com os peixes. \n
+        Ideal para descanso, tranquila e limpa. É uma praia peculiar, parte dela tem o mar mais
+        agitado e outra metade parece uma piscina, <b>ótimo para crianças</b>. \n
+        O local possui quiosques na beira da praia e uma visão deslumbrante da natureza. \n
+        Cheia de coqueiros e artesanato indígenas. Localizada no município de <b>Santa Cruz Cabrália</b>,
+        distante 14 quilômetros de <b>Porto Seguro</b> é também um local cheio de história, onde foi
+        celebrada a <b>primeira missa no Brasil</b>.
+    </string>
+    <string name="titulo_arraial">ARRAIAL D’AJUDA</string>
+    <string name="texto_arraial">
+        Distante 10 minutos de balsa de Porto Seguro, na travessia pelo Rio Bunharém, o centro de
+        <b>Arraial d’Ajuda</b> é mais um dos atrativos conhecido por suas <b>belezas naturais e históricas</b>. \n
+        O distrito abriga a <b>igreja da padroeira Nossa Senhora d’Ajuda</b> construída em 1549. \n
+        Inclui praias bem estruturadas, com movimento e bastante curtição. Também tem as quase
+        desertas, pouca estrutura, perfeitas para contato com a natureza. \n
+        A noite reúne o público jovem e animado.
+    </string>
+    <string name="titulo_trancoso">TRANCOSO</string>
+    <string name="texto_trancoso">
+        Destino dos famosos, como artistas nacionais e internacionais, esse distrito de Porto
+        Seguro, tem as mais <b>lindas praias do sul da Bahia</b>. \n
+        A <b>Praça São João</b>, chamada de <b>Quadrado</b>, faz parte do <b>centro histórico de Trancoso</b>, onde
+        estão às casinhas coloridas da época da colonização e que são cartão postal da cidade,
+        além da igreja. \n
+        Tudo cercado de natureza exuberante com árvores centenárias, sendo este o destino
+        considerado uns dos <b>15 melhores lugares do mundo para se visitar</b>. \n
+        “Sorria gostoso, você está em Trancoso”.
+    </string>
+    <string name="titulo_quarto1">SUÍTE MASTER COM BANHEIRA</string>
+    <string name="txt_detalhes">DETALHES DO QUARTO</string>
+
 </resources>

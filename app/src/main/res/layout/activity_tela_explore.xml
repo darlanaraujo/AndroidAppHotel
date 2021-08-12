@@ -1,9 +1,629 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/draw_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TelaExplore">
+    tools:context=".TelaExplore"
+    tools:openDrawer="start">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Comando que coloca o menu na tela principal -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/topo"
+        app:menu="@menu/menu"
+        tools:visibility="gone" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Layout do topo do app -->
+
+        <ImageView
+            android:id="@+id/imageFundo3"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_fundo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageFundoCor3"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_fundo_cor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:layout_constraintBottom_toTopOf="@+id/imageView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/linha1" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:layout_constraintBottom_toBottomOf="@+id/imageFundo3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/linha2" />
+
+        <ImageView
+            android:id="@+id/imageTitulo"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/titulo1"
+            app:layout_constraintEnd_toEndOf="@+id/imageTitulo3"
+            app:layout_constraintStart_toStartOf="@+id/imageTitulo3"
+            app:layout_constraintTop_toTopOf="@+id/imageLogo2" />
+
+        <ImageView
+            android:id="@+id/imageTitulo3"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/titulo2"
+            app:layout_constraintBottom_toBottomOf="@+id/imageLogo2"
+            app:layout_constraintEnd_toEndOf="@+id/imageFundo3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageLogo2" />
+
+        <ImageView
+            android:id="@+id/imageLogo2"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_marginTop="52dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/icone_g"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.177"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- barra superior com icone para chamar a tela -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/borda_arredondada"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.044"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_menu" />
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageFundo3">
+
+            <LinearLayout
+                android:id="@+id/layConteudo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView43"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/cabralia0" />
+
+                        <ImageView
+                            android:id="@+id/imageView44"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/cabralia1" />
+
+                        <ImageView
+                            android:id="@+id/imageView45"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/cabralia2" />
+
+                        <ImageView
+                            android:id="@+id/imageView46"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/cabralia3" />
+
+                        <ImageView
+                            android:id="@+id/imageView47"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/cabralia4" />
+
+                        <ImageView
+                            android:id="@+id/imageView48"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/cabralia5" />
+
+                        <ImageView
+                            android:id="@+id/imageView49"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/cabralia6" />
+
+                        <ImageView
+                            android:id="@+id/imageView50"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/cabralia7" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <ImageView
+                    android:id="@+id/imageView41"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/linha1" />
+
+                <ImageView
+                    android:id="@+id/imageView42"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageFundo3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/linha2" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/titulo_crabralia"
+                    android:textColor="@color/padrao"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/texto_cabralia" />
+
+                <ImageView
+                    android:id="@+id/imageView52"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageFundo3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/linha2" />
+
+                <ImageView
+                    android:id="@+id/imageView51"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/linha1" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView53"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/coroa1" />
+
+                        <ImageView
+                            android:id="@+id/imageView54"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/coroa2" />
+
+                        <ImageView
+                            android:id="@+id/imageView55"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/coroa3" />
+
+                        <ImageView
+                            android:id="@+id/imageView56"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/coroa4" />
+
+                        <ImageView
+                            android:id="@+id/imageView57"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/coroa5" />
+
+                        <ImageView
+                            android:id="@+id/imageView58"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/coroa6" />
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <ImageView
+                    android:id="@+id/imageView59"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/linha1" />
+
+                <ImageView
+                    android:id="@+id/imageView60"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/linha2" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/titulo_coroa"
+                    android:textColor="@color/padrao"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/texto_coroa" />
+
+                <ImageView
+                    android:id="@+id/imageView67"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/linha2" />
+
+                <ImageView
+                    android:id="@+id/imageView66"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/linha1" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp">
+
+                        <ImageView
+                            android:id="@+id/imageView61"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/arraial1" />
+
+                        <ImageView
+                            android:id="@+id/imageView62"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/arraial2" />
+
+                        <ImageView
+                            android:id="@+id/imageView63"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/arraial3" />
+
+                        <ImageView
+                            android:id="@+id/imageView64"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/arraial4" />
+
+                        <ImageView
+                            android:id="@+id/imageView65"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/arraial5" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <ImageView
+                    android:id="@+id/imageView69"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/linha2" />
+
+                <ImageView
+                    android:id="@+id/imageView68"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/linha1" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/titulo_arraial"
+                    android:textColor="@color/padrao"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/texto_arraial" />
+
+                <ImageView
+                    android:id="@+id/imageView75"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageFundo3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/linha2" />
+
+                <ImageView
+                    android:id="@+id/imageView74"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/linha1" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp" >
+
+                        <ImageView
+                            android:id="@+id/imageView78"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/trancoso1" />
+
+                        <ImageView
+                            android:id="@+id/imageView79"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/trancoso2" />
+
+                        <ImageView
+                            android:id="@+id/imageView80"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/trancoso3" />
+
+                        <ImageView
+                            android:id="@+id/imageView81"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/trancoso4" />
+
+                        <ImageView
+                            android:id="@+id/imageView82"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            app:srcCompat="@drawable/trancoso5" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <ImageView
+                    android:id="@+id/imageView77"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageFundo3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/linha2" />
+
+                <ImageView
+                    android:id="@+id/imageView76"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/linha1" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/titulo_trancoso"
+                    android:textColor="@color/padrao"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/texto_trancoso" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="@string/txt_venha"
+                    android:textColor="@color/padrao"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnReserva"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/padrao_dourado_dark"
+                    android:text="@string/titulo_fazer_reserva" />
+
+                <Button
+                    android:id="@+id/btnVoltar"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:text="@string/txt_voltar"
+                    app:icon="@drawable/icon_logof"
+                    app:iconGravity="textStart" />
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <ImageButton
+            android:id="@+id/btnExplore"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/titulo_servicos"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_explore"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageTitulo3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

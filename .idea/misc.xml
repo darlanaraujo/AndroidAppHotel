@@ -12,7 +12,7 @@
         <entry key="app/src/main/res/drawable/slide_fotos.xml" value="0.24270833333333333" />
         <entry key="app/src/main/res/layout/activity_tela_acomodacoes.xml" value="0.2265625" />
         <entry key="app/src/main/res/layout/activity_tela_contato.xml" value="0.2125" />
-        <entry key="app/src/main/res/layout/activity_tela_explore.xml" value="0.2125" />
+        <entry key="app/src/main/res/layout/activity_tela_explore.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_tela_hotel.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_tela_login.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_tela_reserva.xml" value="0.2125" />
@@ -20,6 +20,8 @@
         <entry key="app/src/main/res/layout/corpo.xml" value="0.2265625" />
         <entry key="app/src/main/res/layout/imagem_alerta.xml" value="0.24114583333333334" />
         <entry key="app/src/main/res/layout/imagem_pop.xml" value="0.2265625" />
+        <entry key="app/src/main/res/layout/pop_quarto1.xml" value="0.2265625" />
+        <entry key="app/src/main/res/layout/pop_serv_quarto.xml" value="0.24114583333333334" />
         <entry key="app/src/main/res/layout/tela_principal.xml" value="0.25" />
         <entry key="app/src/main/res/layout/topo.xml" value="0.33" />
         <entry key="app/src/main/res/menu/menu.xml" value="0.25" />
