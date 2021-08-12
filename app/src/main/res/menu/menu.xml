@@ -26,7 +26,7 @@
                 <item
                     android:id="@+id/menu_profile"
                     android:icon="@drawable/ic_profile"
-                    android:title="@string/titulo_profile" />
+                    android:title="@string/titulo_minha_conta" />
                 <item
                     android:id="@+id/menu_logoff"
                     android:icon="@drawable/ic_exit"
@@ -87,15 +87,15 @@
 
             <item
                 android:id="@+id/menu_facebook"
-                android:icon="@drawable/ic_home"
+                android:icon="@drawable/icon_face"
                 android:title="@string/txt_facebook" />
             <item
                 android:id="@+id/menu_instagram"
-                android:icon="@drawable/ic_home"
+                android:icon="@drawable/icon_instagram"
                 android:title="@string/txt_instagram" />
             <item
                 android:id="@+id/menu_twitter"
-                android:icon="@drawable/ic_home"
+                android:icon="@drawable/icon_twitter"
                 android:title="@string/txt_twitter" />
 
         </menu>

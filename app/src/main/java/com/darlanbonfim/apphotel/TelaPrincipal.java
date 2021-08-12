@@ -30,9 +30,6 @@ import com.google.android.material.navigation.NavigationView;
 
 public class TelaPrincipal extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    // Atributos dos botões;
-    ImageButton btnHotel;
-
     // Atributos variados
     ImageView imgSlide;
     Intent intent;
@@ -51,9 +48,6 @@ public class TelaPrincipal extends AppCompatActivity implements NavigationView.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tela_principal);
 
-        // Ligação dos botões do menu;
-        btnHotel = findViewById(R.id.btnHotel);
-
         // Ligação dos objetos com os atributos da tela;
         drawerLayout = findViewById(R.id.draw_layout); // Corpo do menu;
         navigationView = findViewById(R.id.nav_view); // Topo do menu;
@@ -71,9 +65,9 @@ public class TelaPrincipal extends AppCompatActivity implements NavigationView.O
         navigationView.bringToFront();
         navigationView.setNavigationItemSelectedListener(this);
 
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        //getSupportActionBar().setDisplayShowHomeEnabled(true);
         //getSupportActionBar().setIcon(R.mipmap.ic_launcher);
-        getSupportActionBar().setTitle(""); // Comando para deixar o titulo vazio;
+        //getSupportActionBar().setTitle(""); // Comando para deixar o titulo vazio;
 
 
         // Animação;
@@ -112,10 +106,6 @@ public class TelaPrincipal extends AppCompatActivity implements NavigationView.O
 
     public void setContato(View view){
         setAnimacao(TelaContato.class);
-    }
-
-    public void setLogin(View view){
-        setAnimacao(TelaLogin.class);
     }
 
     // FERRAMENTAS =================================================================================

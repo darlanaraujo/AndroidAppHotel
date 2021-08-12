@@ -65,7 +65,8 @@
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                tools:ignore="SpeakableTextPresentCheck">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -84,6 +85,7 @@
                         android:id="@+id/imageView33"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
                         app:srcCompat="@drawable/foto_serv_quarto2" />
@@ -92,6 +94,7 @@
                         android:id="@+id/imageView34"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
                         app:srcCompat="@drawable/foto_serv_quarto3" />
@@ -100,6 +103,7 @@
                         android:id="@+id/imageView35"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
                         app:srcCompat="@drawable/foto_serv_quarto4" />
@@ -108,6 +112,7 @@
                         android:id="@+id/imageView36"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
                         app:srcCompat="@drawable/foto_serv_quarto5" />

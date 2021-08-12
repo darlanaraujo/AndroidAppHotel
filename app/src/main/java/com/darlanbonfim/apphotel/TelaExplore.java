@@ -7,6 +7,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -74,7 +75,16 @@ public class TelaExplore extends AppCompatActivity implements NavigationView.OnN
             }
         });
 
-
+        // Configuração do botão Reserva;
+        btnReserva = findViewById(R.id.btnReserva);
+        btnReserva.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TelaExplore.this, TelaReserva.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
     }
 

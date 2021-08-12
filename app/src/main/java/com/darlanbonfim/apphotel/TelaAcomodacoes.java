@@ -30,7 +30,7 @@ public class TelaAcomodacoes extends AppCompatActivity implements NavigationView
     // Atributos
     Button btnVoltar, btnReserva;
 
-    ImageButton btnQuarto1;
+    ImageButton btnQuarto1, btnQuarto2, btnQuarto3;
 
     // Animação;
     Animation animItens;
@@ -87,14 +87,41 @@ public class TelaAcomodacoes extends AppCompatActivity implements NavigationView
             }
         });
 
+        // Botão Quarto 1;
         btnQuarto1 = findViewById(R.id.btnQuarto1);
         btnQuarto1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // Criação do AlertDialog para receber uma tela;
                 AlertDialog.Builder pop = new AlertDialog.Builder(TelaAcomodacoes.this);
                 View tela = getLayoutInflater().inflate(R.layout.pop_quarto1, null); // Adiciono a activit ao atributo tela;
 
                 // Botão Reserva;
+                Button btnReserva = tela.findViewById(R.id.btnReserva); // Esse é o botão que está dentro da tela pop_quarto;
+                btnReserva.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(TelaAcomodacoes.this, TelaReserva.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                });
+
+                // Chamda do popup;
+                pop.setView(tela); // Adiciona a tela ao AlertDialog;
+                pop.show(); // Mostra o AlertDialog;
+            }
+        });
+
+        // Botão Quarto 2;
+        btnQuarto2 = findViewById(R.id.btnQuarto2);
+        btnQuarto2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                AlertDialog.Builder pop = new AlertDialog.Builder(TelaAcomodacoes.this);
+                View tela = getLayoutInflater().inflate(R.layout.pop_quarto2, null); // Adiciono a activit ao atributo tela;
+
                 Button btnReserva = tela.findViewById(R.id.btnReserva);
                 btnReserva.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -108,6 +135,35 @@ public class TelaAcomodacoes extends AppCompatActivity implements NavigationView
                 // Chamda do popup;
                 pop.setView(tela); // Adiciona a tela ao AlertDialog;
                 pop.show(); // Mostra o AlertDialog;
+
+            }
+        });
+
+        // Botão Quarto 3;
+        btnQuarto3 = findViewById(R.id.btnQuarto3);
+        btnQuarto3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                AlertDialog.Builder pop = new AlertDialog.Builder(TelaAcomodacoes.this);
+                View tela = getLayoutInflater().inflate(R.layout.pop_quarto3, null); // Adiciono a activit ao atributo tela;
+
+                Button btnReserva = tela.findViewById(R.id.btnReserva); // Esse é o botão que está dentro da tela pop_quarto;
+                btnReserva.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        Intent intent = new Intent(TelaAcomodacoes.this, TelaReserva.class);
+                        startActivity(intent);
+                        finish();
+
+                    }
+                });
+
+                // Chamda do popup;
+                pop.setView(tela); // Adiciona a tela ao AlertDialog;
+                pop.show(); // Mostra o AlertDialog;
+
             }
         });
 

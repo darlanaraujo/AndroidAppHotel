@@ -253,6 +253,19 @@
                     android:gravity="center"
                     android:text="@string/texto_cabralia" />
 
+                <!-- Comando que coloca o vídeo do YouTube no app -->
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:videoId="squ-A-cla6k"
+                    android:background="@drawable/borda_arred_black"
+                    android:padding="5dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:autoPlay="false"
+                    app:showFullScreenButton="true"/>
+
                 <ImageView
                     android:id="@+id/imageView52"
                     android:layout_width="match_parent"
@@ -366,6 +379,19 @@
                     android:gravity="center"
                     android:text="@string/texto_coroa" />
 
+                <!-- Comando que coloca o vídeo do YouTube no app -->
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:videoId="squ-A-cla6k"
+                    android:background="@drawable/borda_arred_black"
+                    android:padding="5dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:autoPlay="false"
+                    app:showFullScreenButton="true"/>
+
                 <ImageView
                     android:id="@+id/imageView67"
                     android:layout_width="match_parent"
@@ -464,6 +490,19 @@
                     android:layout_margin="5dp"
                     android:gravity="center"
                     android:text="@string/texto_arraial" />
+
+                <!-- Comando que coloca o vídeo do YouTube no app -->
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:videoId="squ-A-cla6k"
+                    android:background="@drawable/borda_arred_black"
+                    android:padding="5dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:autoPlay="false"
+                    app:showFullScreenButton="true"/>
 
                 <ImageView
                     android:id="@+id/imageView75"
@@ -575,6 +614,19 @@
                     android:layout_margin="5dp"
                     android:gravity="center"
                     android:text="@string/texto_trancoso" />
+
+                <!-- Comando que coloca o vídeo do YouTube no app -->
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:videoId="squ-A-cla6k"
+                    android:background="@drawable/borda_arred_black"
+                    android:padding="5dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:autoPlay="false"
+                    app:showFullScreenButton="true"/>
 
                 <TextView
                     android:id="@+id/textView11"

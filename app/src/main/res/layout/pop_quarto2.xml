@@ -24,7 +24,7 @@
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:padding="10dp"
-                app:srcCompat="@drawable/banner_quarto1" />
+                app:srcCompat="@drawable/banner_quarto2" />
 
             <ImageView
                 android:id="@+id/imageView73"
@@ -49,48 +49,51 @@
                     android:layout_height="200dp">
 
                     <ImageView
-                        android:id="@+id/imageView84"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
-                        app:srcCompat="@drawable/foto_quarto1_1" />
+                        app:srcCompat="@drawable/foto_quarto2_1" />
 
                     <ImageView
-                        android:id="@+id/imageView85"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="3dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
-                        app:srcCompat="@drawable/foto_quarto1_2" />
+                        app:srcCompat="@drawable/foto_quarto2_2" />
 
                     <ImageView
-                        android:id="@+id/imageView86"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="3dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
-                        app:srcCompat="@drawable/foto_quarto1_3" />
+                        app:srcCompat="@drawable/foto_quarto2_3" />
 
                     <ImageView
-                        android:id="@+id/imageView87"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="3dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
-                        app:srcCompat="@drawable/foto_quarto1_4" />
+                        app:srcCompat="@drawable/foto_quarto2_4" />
 
                     <ImageView
-                        android:id="@+id/imageView88"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="3dp"
                         android:layout_weight="1"
                         android:adjustViewBounds="true"
-                        app:srcCompat="@drawable/foto_quarto1_5" />
+                        app:srcCompat="@drawable/foto_quarto2_5" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        app:srcCompat="@drawable/foto_quarto2_6" />
                 </LinearLayout>
             </HorizontalScrollView>
 
@@ -124,14 +127,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
-                app:srcCompat="@drawable/icon_det_quarto1_1" />
-
-            <ImageView
-                android:id="@+id/imageView92"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:adjustViewBounds="true"
-                app:srcCompat="@drawable/icon_det_quarto1_2" />
+                app:srcCompat="@drawable/icon_det_quarto2" />
 
             <TextView
                 android:id="@+id/textView11"

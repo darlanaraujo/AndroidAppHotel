@@ -16,34 +16,34 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".TelaContato"
+            android:configChanges="orientation"
             android:exported="true"
-            android:screenOrientation="portrait"
-            android:configChanges="orientation"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".TelaExplore"
-            android:exported="true"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".TelaAcomodacoes"
-            android:exported="true"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".TelaServicos"
-            android:exported="true"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".TelaReserva"
-            android:exported="true"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".TelaHotel"
-            android:exported="true"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".TelaPrincipal"
             android:configChanges="orientation"
