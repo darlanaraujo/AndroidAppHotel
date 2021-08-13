@@ -4,13 +4,16 @@ import static android.system.Os.close;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.app.ActivityOptionsCompat;
 
-public class Menu {
+public class Menu extends AppCompatActivity {
 
     Intent intent;
     ActivityOptionsCompat animacao;
@@ -58,10 +61,21 @@ public class Menu {
                 setAnimacao(context, TelaLogin.class);
                 break;
 
+            case R.id.menu_facebook:
+                setNavegacao(context,"https://github.com/darlanaraujo");
+                break;
+
+            case R.id.menu_instagram:
+                setNavegacao(context,"https://github.com/darlanaraujo");
+                break;
+
+            case R.id.menu_twitter:
+                setNavegacao(context,"https://github.com/darlanaraujo");
+                break;
+
             case R.id.menu_sair:
 
                 break;
-
         }
 
     }
@@ -70,6 +84,7 @@ public class Menu {
         intent = new Intent(context, tela);
         ActivityOptionsCompat animacao = ActivityOptionsCompat.makeCustomAnimation(context, R.anim.fade_in, R.anim.anim_cair);
         ActivityCompat.startActivity(context, intent, animacao.toBundle());
+
         try {
             finalize();
         } catch (Throwable throwable) {
@@ -77,5 +92,16 @@ public class Menu {
         }
     }
 
+    public void setNavegacao(Context context, String caminho){
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(caminho));
+        Toast.makeText(context, "Você será direcionado para nossa página!", Toast.LENGTH_LONG).show();
+        //startActivity(intent);
+    }
+
+    @Override
+    public void finish(){
+        super.finish();
+
+    }
 
 }

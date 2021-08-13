@@ -28,7 +28,7 @@ public class TelaAcomodacoes extends AppCompatActivity implements NavigationView
     Toolbar toolbar;
 
     // Atributos
-    Button btnVoltar, btnReserva;
+    Button btnReserva;
 
     ImageButton btnQuarto1, btnQuarto2, btnQuarto3;
 
@@ -67,17 +67,8 @@ public class TelaAcomodacoes extends AppCompatActivity implements NavigationView
         layConteudo = findViewById(R.id.layConteudo);
         layConteudo.setAnimation(animItens);
 
-        // Configuraçãos do botão de voltar;
-        btnVoltar = findViewById(R.id.btnVoltar);
-        btnVoltar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-
         // Configiração do Botão Reserva;
-        Button btnReserva = findViewById(R.id.btnReserva);
+        btnReserva = findViewById(R.id.btnReserva);
         btnReserva.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -8,8 +8,13 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.text.Layout;
+import android.util.Xml;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -22,6 +27,8 @@ import android.widget.LinearLayout;
 
 import com.google.android.material.navigation.NavigationView;
 
+import java.util.ResourceBundle;
+
 public class TelaServicos extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     // Atributos do menu;
@@ -30,8 +37,7 @@ public class TelaServicos extends AppCompatActivity implements NavigationView.On
     Toolbar toolbar;
 
     // Atributos
-    Button btnVoltar, btnReserva;
-    ImageButton btnServQuarto;
+    Button btnReserva;
 
     // Animação;
     Animation animItens;
@@ -70,17 +76,17 @@ public class TelaServicos extends AppCompatActivity implements NavigationView.On
         layConteudo = findViewById(R.id.layConteudo);
         layConteudo.setAnimation(animItens);
 
-        // Configurações do botão de voltar;
-        btnVoltar = findViewById(R.id.btnVoltar);
-        btnVoltar.setOnClickListener(new View.OnClickListener() {
+        // Configurações do botão de Reserva;
+        btnReserva = findViewById(R.id.btnReserva);
+        btnReserva.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                Intent intent = new Intent(TelaServicos.this, TelaReserva.class);
+                startActivity(intent);
                 finish();
             }
         });
-
-        // Botão dos serviços;
-        btnServQuarto = findViewById(R.id.btnServQuarto);
 
     }
 
@@ -127,22 +133,219 @@ public class TelaServicos extends AppCompatActivity implements NavigationView.On
 
     // CONFIGURAÇÕES ESPECIFICAS DA TELA =======================================================
 
+    // Ferramentas;
+    public void setReserva(){
+        Intent intent = new Intent(TelaServicos.this, TelaReserva.class);
+        startActivity(intent);
+        finish();
+    }
+
     public void setServQuarto(View view){
 
         // Comando para mostrar uma página dentro de um Alerta;
         LayoutInflater imgServicos = LayoutInflater.from(TelaServicos.this);
-        final View imagem = imgServicos.inflate(R.layout.pop_serv_quarto, null);
+        final View tela = imgServicos.inflate(R.layout.pop_serv_quarto, null);
         AlertDialog.Builder pop = new AlertDialog.Builder(TelaServicos.this);
 
-        // Esse comando passa a pagina ser exibida dentro do AlertDialog;
-        pop.setView(imagem);
-
-        pop.setNeutralButton("Voltar", new DialogInterface.OnClickListener() {
+        btnReserva = tela.findViewById(R.id.btnReserva);
+        btnReserva.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(DialogInterface dialog, int which) {
-
+            public void onClick(View v) {
+                setReserva();
             }
         });
+
+        // Esse comando passa a pagina ser exibida dentro do AlertDialog;
+        pop.setView(tela);
+
+        pop.show();
+    }
+
+    public void setServBar(View view){
+
+        // Comando para mostrar uma página dentro de um Alerta;
+        LayoutInflater imgServicos = LayoutInflater.from(TelaServicos.this);
+        final View tela = imgServicos.inflate(R.layout.pop_serv_quarto, null);
+        AlertDialog.Builder pop = new AlertDialog.Builder(TelaServicos.this);
+
+        btnReserva = tela.findViewById(R.id.btnReserva);
+        btnReserva.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setReserva();
+            }
+        });
+
+        // Esse comando passa a pagina ser exibida dentro do AlertDialog;
+        pop.setView(tela);
+
+        pop.show();
+    }
+
+    public void setServYoga(View view){
+
+        // Comando para mostrar uma página dentro de um Alerta;
+        LayoutInflater imgServicos = LayoutInflater.from(TelaServicos.this);
+        final View tela = imgServicos.inflate(R.layout.pop_serv_quarto, null);
+        AlertDialog.Builder pop = new AlertDialog.Builder(TelaServicos.this);
+
+        btnReserva = tela.findViewById(R.id.btnReserva);
+        btnReserva.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setReserva();
+            }
+        });
+
+        // Esse comando passa a pagina ser exibida dentro do AlertDialog;
+        pop.setView(tela);
+
+        pop.show();
+    }
+
+    public void setServSauna(View view){
+
+        // Comando para mostrar uma página dentro de um Alerta;
+        LayoutInflater imgServicos = LayoutInflater.from(TelaServicos.this);
+        final View tela = imgServicos.inflate(R.layout.pop_serv_quarto, null);
+        AlertDialog.Builder pop = new AlertDialog.Builder(TelaServicos.this);
+
+        btnReserva = tela.findViewById(R.id.btnReserva);
+        btnReserva.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setReserva();
+            }
+        });
+
+        // Esse comando passa a pagina ser exibida dentro do AlertDialog;
+        pop.setView(tela);
+
+        pop.show();
+    }
+
+    public void setServCafe(View view){
+
+        // Comando para mostrar uma página dentro de um Alerta;
+        LayoutInflater imgServicos = LayoutInflater.from(TelaServicos.this);
+        final View tela = imgServicos.inflate(R.layout.pop_serv_quarto, null);
+        AlertDialog.Builder pop = new AlertDialog.Builder(TelaServicos.this);
+
+        btnReserva = tela.findViewById(R.id.btnReserva);
+        btnReserva.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setReserva();
+            }
+        });
+
+        // Esse comando passa a pagina ser exibida dentro do AlertDialog;
+        pop.setView(tela);
+
+        pop.show();
+    }
+
+    public void setServAcademia(View view){
+
+        // Comando para mostrar uma página dentro de um Alerta;
+        LayoutInflater imgServicos = LayoutInflater.from(TelaServicos.this);
+        final View tela = imgServicos.inflate(R.layout.pop_serv_quarto, null);
+        AlertDialog.Builder pop = new AlertDialog.Builder(TelaServicos.this);
+
+        btnReserva = tela.findViewById(R.id.btnReserva);
+        btnReserva.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setReserva();
+            }
+        });
+
+        // Esse comando passa a pagina ser exibida dentro do AlertDialog;
+        pop.setView(tela);
+
+        pop.show();
+    }
+
+    public void setServBaby(View view){
+
+        // Comando para mostrar uma página dentro de um Alerta;
+        LayoutInflater imgServicos = LayoutInflater.from(TelaServicos.this);
+        final View tela = imgServicos.inflate(R.layout.pop_serv_quarto, null);
+        AlertDialog.Builder pop = new AlertDialog.Builder(TelaServicos.this);
+
+        btnReserva = tela.findViewById(R.id.btnReserva);
+        btnReserva.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setReserva();
+            }
+        });
+
+        // Esse comando passa a pagina ser exibida dentro do AlertDialog;
+        pop.setView(tela);
+
+        pop.show();
+    }
+
+    public void setServJogos(View view){
+
+        // Comando para mostrar uma página dentro de um Alerta;
+        LayoutInflater imgServicos = LayoutInflater.from(TelaServicos.this);
+        final View tela = imgServicos.inflate(R.layout.pop_serv_quarto, null);
+        AlertDialog.Builder pop = new AlertDialog.Builder(TelaServicos.this);
+
+        btnReserva = tela.findViewById(R.id.btnReserva);
+        btnReserva.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setReserva();
+            }
+        });
+
+        // Esse comando passa a pagina ser exibida dentro do AlertDialog;
+        pop.setView(tela);
+
+        pop.show();
+    }
+
+    public void setServLazer(View view){
+
+        // Comando para mostrar uma página dentro de um Alerta;
+        LayoutInflater imgServicos = LayoutInflater.from(TelaServicos.this);
+        final View tela = imgServicos.inflate(R.layout.pop_serv_quarto, null);
+        AlertDialog.Builder pop = new AlertDialog.Builder(TelaServicos.this);
+
+        btnReserva = tela.findViewById(R.id.btnReserva);
+        btnReserva.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setReserva();
+            }
+        });
+
+        // Esse comando passa a pagina ser exibida dentro do AlertDialog;
+        pop.setView(tela);
+
+        pop.show();
+    }
+
+    public void setServRestaurante(View view){
+
+        // Comando para mostrar uma página dentro de um Alerta;
+        LayoutInflater imgServicos = LayoutInflater.from(TelaServicos.this);
+        final View tela = imgServicos.inflate(R.layout.pop_serv_quarto, null);
+        AlertDialog.Builder pop = new AlertDialog.Builder(TelaServicos.this);
+
+        btnReserva = tela.findViewById(R.id.btnReserva);
+        btnReserva.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setReserva();
+            }
+        });
+
+        // Esse comando passa a pagina ser exibida dentro do AlertDialog;
+        pop.setView(tela);
 
         pop.show();
     }

@@ -7,7 +7,7 @@
 
     <ScrollView
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="500dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
-                android:padding="9dp"
+                android:padding="10dp"
                 app:srcCompat="@drawable/btn_serv_quarto" />
 
             <ImageView
@@ -31,37 +31,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
-                app:srcCompat="@drawable/linha1" />
-
-            <ImageView
-                android:id="@+id/imageView31"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:adjustViewBounds="true"
-                app:srcCompat="@drawable/linha2" />
+                app:srcCompat="@drawable/linha" />
 
             <TextView
                 android:id="@+id/textView14"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp"
                 android:gravity="center"
                 android:text="@string/servico_quarto" />
-
-            <ImageView
-                android:id="@+id/imageView37"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:adjustViewBounds="true"
-                app:srcCompat="@drawable/linha1" />
 
             <ImageView
                 android:id="@+id/imageView38"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
-                app:srcCompat="@drawable/linha2" />
+                app:srcCompat="@drawable/linha" />
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
@@ -70,7 +57,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="250dp">
+                    android:layout_height="200dp">
 
                     <ImageView
                         android:id="@+id/imageView32"
@@ -124,14 +111,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
-                app:srcCompat="@drawable/linha2" />
+                app:srcCompat="@drawable/linha" />
 
-            <ImageView
-                android:id="@+id/imageView39"
+            <TextView
+                android:id="@+id/textView11"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:adjustViewBounds="true"
-                app:srcCompat="@drawable/linha1" />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="@string/txt_venha"
+                android:textColor="@color/padrao"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnReserva"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/padrao_dourado_dark"
+                android:text="@string/titulo_fazer_reserva" />
 
         </LinearLayout>
     </ScrollView>

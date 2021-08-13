@@ -31,14 +31,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
-                app:srcCompat="@drawable/linha1" />
-
-            <ImageView
-                android:id="@+id/imageView83"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:adjustViewBounds="true"
-                app:srcCompat="@drawable/linha2" />
+                app:srcCompat="@drawable/linha" />
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
@@ -102,14 +95,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
-                app:srcCompat="@drawable/linha1" />
-
-            <ImageView
-                android:id="@+id/imageView90"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:adjustViewBounds="true"
-                app:srcCompat="@drawable/linha2" />
+                app:srcCompat="@drawable/linha" />
 
             <TextView
                 android:id="@+id/textView23"

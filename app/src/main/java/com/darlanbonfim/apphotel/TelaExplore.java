@@ -29,7 +29,7 @@ public class TelaExplore extends AppCompatActivity implements NavigationView.OnN
     Toolbar toolbar;
 
     // Atributos
-    Button btnVoltar, btnReserva;
+    Button btnReserva;
 
     // Animação;
     Animation animItens;
@@ -65,15 +65,6 @@ public class TelaExplore extends AppCompatActivity implements NavigationView.OnN
         animItens = AnimationUtils.loadAnimation(this, R.anim.anim_itens);
         layConteudo = findViewById(R.id.layConteudo);
         layConteudo.setAnimation(animItens);
-
-        // Configurações do botão de voltar;
-        btnVoltar = findViewById(R.id.btnVoltar);
-        btnVoltar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
 
         // Configuração do botão Reserva;
         btnReserva = findViewById(R.id.btnReserva);

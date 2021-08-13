@@ -27,7 +27,7 @@ public class TelaHotel extends AppCompatActivity implements NavigationView.OnNav
     Toolbar toolbar;
 
     // Atributos
-    Button btnVoltar, btnReserva;
+    Button btnReserva;
 
     // Animações
     LinearLayout layConteudo;
@@ -59,16 +59,6 @@ public class TelaHotel extends AppCompatActivity implements NavigationView.OnNav
 
         // CONFIGURAÇÕES ESPECIFICAS DA TELA =======================================================
 
-        // Configurações do botão de voltar;
-        btnVoltar = findViewById(R.id.btnVoltar);
-        btnVoltar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-
-        // Configurações do botão de reserva;
         // Configuração do botão Reserva;
         btnReserva = findViewById(R.id.btnReserva);
         btnReserva.setOnClickListener(new View.OnClickListener() {

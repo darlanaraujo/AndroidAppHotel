@@ -163,6 +163,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:onClick="setServBar"
                         android:scaleType="centerInside"
                         app:srcCompat="@drawable/btn_open_bar" />
 
@@ -171,6 +172,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:onClick="setServYoga"
                         android:scaleType="centerInside"
                         app:srcCompat="@drawable/btn_yoga" />
 
@@ -179,6 +181,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:onClick="setServSauna"
                         android:scaleType="centerInside"
                         app:srcCompat="@drawable/btn_sauna" />
 
@@ -187,6 +190,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:onClick="setServCafe"
                         android:scaleType="centerInside"
                         app:srcCompat="@drawable/btn_cafe" />
 
@@ -195,6 +199,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:onClick="setServAcademia"
                         android:scaleType="centerInside"
                         app:srcCompat="@drawable/btn_academia" />
 
@@ -203,6 +208,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:onClick="setServBaby"
                         android:scaleType="centerInside"
                         app:srcCompat="@drawable/btn_baby" />
 
@@ -211,6 +217,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:onClick="setServJogos"
                         android:scaleType="centerInside"
                         app:srcCompat="@drawable/btn_jogos" />
 
@@ -219,6 +226,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:onClick="setServLazer"
                         android:scaleType="centerInside"
                         app:srcCompat="@drawable/btn_lazer" />
 
@@ -227,6 +235,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:onClick="setServRestaurante"
                         android:scaleType="centerInside"
                         app:srcCompat="@drawable/btn_restaurante" />
 
@@ -252,21 +261,16 @@
                     android:backgroundTint="@color/padrao_dourado_dark"
                     android:text="@string/titulo_fazer_reserva" />
 
-                <Button
-                    android:id="@+id/btnVoltar"
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:insetTop="0dp"
-                    android:insetBottom="0dp"
-                    android:text="@string/txt_voltar"
-                    app:icon="@drawable/icon_logof"
-                    app:iconGravity="textStart" />
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/rodape_contato" />
 
             </LinearLayout>
         </ScrollView>
 
         <ImageButton
-            android:id="@+id/btnExplore"
             android:layout_width="110dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"

@@ -292,15 +292,11 @@
                         android:backgroundTint="@color/padrao_dourado_dark"
                         android:text="@string/titulo_fazer_reserva" />
 
-                    <Button
-                        android:id="@+id/btnVoltar"
+                    <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:insetTop="0dp"
-                        android:insetBottom="0dp"
-                        android:text="@string/txt_voltar"
-                        app:icon="@drawable/icon_logof"
-                        app:iconGravity="textStart" />
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        app:srcCompat="@drawable/rodape_contato" />
 
                 </LinearLayout>
 
