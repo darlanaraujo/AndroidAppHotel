@@ -40,8 +40,8 @@ public class TelaPrincipal extends AppCompatActivity implements NavigationView.O
     Toolbar toolbar;
 
     // Animação
-    Animation animItens;
-    LinearLayout layConteudo;
+    Animation animItens, animItens2;
+    ImageButton btnHotel, btnReserva, btnServicos, btnAcomodacoes, btnExplore, btnContato;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,12 +69,28 @@ public class TelaPrincipal extends AppCompatActivity implements NavigationView.O
         //getSupportActionBar().setIcon(R.mipmap.ic_launcher);
         //getSupportActionBar().setTitle(""); // Comando para deixar o titulo vazio;
 
+        // Comando para mostrar ou ocultar o itens do menu;
+        android.view.Menu menu = navigationView.getMenu();
+        menu.findItem(R.id.menu_logoff).setVisible(false);
+        menu.findItem(R.id.menu_MinhaConta).setVisible(false);
+
+        // Ligação dos objetos;
+        btnHotel = findViewById(R.id.btnHotel);
+        btnReserva = findViewById(R.id.btnReserva);
+        btnServicos = findViewById(R.id.btnServicos);
+        btnAcomodacoes = findViewById(R.id.btnAcomodacoes);
+        btnExplore = findViewById(R.id.btnExplore);
+        btnContato = findViewById(R.id.btnContato);
 
         // Animação;
         animItens = AnimationUtils.loadAnimation(this, R.anim.anim_itens);
-        layConteudo = findViewById(R.id.layConteudo);
-        layConteudo.setAnimation(animItens);
-
+        animItens2 = AnimationUtils.loadAnimation(this, R.anim.anim_itens2);
+        btnHotel.setAnimation(animItens2);
+        btnReserva.setAnimation(animItens2);
+        btnServicos.setAnimation(animItens);
+        btnAcomodacoes.setAnimation(animItens);
+        btnExplore.setAnimation(animItens);
+        btnContato.setAnimation(animItens);
 
         // Comando que permite gerar um slide nas fotos;
         imgSlide = findViewById(R.id.imgSlide);

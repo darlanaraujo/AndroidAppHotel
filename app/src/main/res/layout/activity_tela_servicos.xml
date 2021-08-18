@@ -5,6 +5,7 @@
     android:id="@+id/draw_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".TelaServicos"
     tools:openDrawer="start">
 
@@ -150,7 +151,7 @@
                     android:orientation="vertical">
 
                     <ImageButton
-                        android:id="@+id/btnServQuarto"
+                        android:id="@+id/btnQuarto"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
@@ -159,7 +160,7 @@
                         app:srcCompat="@drawable/btn_serv_quarto" />
 
                     <ImageButton
-                        android:id="@+id/imageButton2"
+                        android:id="@+id/btnBar"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
@@ -168,7 +169,7 @@
                         app:srcCompat="@drawable/btn_open_bar" />
 
                     <ImageButton
-                        android:id="@+id/imageButton3"
+                        android:id="@+id/btnYoga"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
@@ -177,7 +178,7 @@
                         app:srcCompat="@drawable/btn_yoga" />
 
                     <ImageButton
-                        android:id="@+id/imageButton4"
+                        android:id="@+id/btnSauna"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
@@ -186,7 +187,7 @@
                         app:srcCompat="@drawable/btn_sauna" />
 
                     <ImageButton
-                        android:id="@+id/imageButton5"
+                        android:id="@+id/btnCafe"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"

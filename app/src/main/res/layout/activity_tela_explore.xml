@@ -5,6 +5,7 @@
     android:id="@+id/draw_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".TelaExplore"
     tools:openDrawer="start">
 
@@ -242,8 +243,9 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="@string/titulo_crabralia"
-                    android:textColor="@color/padrao"
-                    android:textSize="20sp" />
+                    android:textColor="@color/padrao_dark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView15"
@@ -251,20 +253,21 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:gravity="center"
-                    android:text="@string/texto_cabralia" />
+                    android:text="@string/texto_cabralia"
+                    android:textColor="@color/padrao" />
 
                 <!-- Comando que coloca o vídeo do YouTube no app -->
                 <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    app:videoId="squ-A-cla6k"
-                    android:background="@drawable/borda_arred_black"
-                    android:padding="5dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
+                    android:background="@drawable/borda_arred_black"
+                    android:padding="5dp"
                     app:autoPlay="false"
-                    app:showFullScreenButton="true"/>
+                    app:showFullScreenButton="true"
+                    app:videoId="squ-A-cla6k" />
 
                 <ImageView
                     android:id="@+id/imageView52"
@@ -368,8 +371,9 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="@string/titulo_coroa"
-                    android:textColor="@color/padrao"
-                    android:textSize="20sp" />
+                    android:textColor="@color/padrao_dark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView17"
@@ -377,20 +381,8 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:gravity="center"
-                    android:text="@string/texto_coroa" />
-
-                <!-- Comando que coloca o vídeo do YouTube no app -->
-                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    app:videoId="squ-A-cla6k"
-                    android:background="@drawable/borda_arred_black"
-                    android:padding="5dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    app:autoPlay="false"
-                    app:showFullScreenButton="true"/>
+                    android:text="@string/texto_coroa"
+                    android:textColor="@color/padrao" />
 
                 <ImageView
                     android:id="@+id/imageView67"
@@ -480,8 +472,9 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="@string/titulo_arraial"
-                    android:textColor="@color/padrao"
-                    android:textSize="20sp" />
+                    android:textColor="@color/padrao_dark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView19"
@@ -489,20 +482,8 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:gravity="center"
-                    android:text="@string/texto_arraial" />
-
-                <!-- Comando que coloca o vídeo do YouTube no app -->
-                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    app:videoId="squ-A-cla6k"
-                    android:background="@drawable/borda_arred_black"
-                    android:padding="5dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    app:autoPlay="false"
-                    app:showFullScreenButton="true"/>
+                    android:text="@string/texto_arraial"
+                    android:textColor="@color/padrao" />
 
                 <ImageView
                     android:id="@+id/imageView75"
@@ -530,7 +511,7 @@
 
                     <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="200dp" >
+                        android:layout_height="200dp">
 
                         <ImageView
                             android:id="@+id/imageView78"
@@ -604,8 +585,9 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="@string/titulo_trancoso"
-                    android:textColor="@color/padrao"
-                    android:textSize="20sp" />
+                    android:textColor="@color/padrao_dark"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView21"
@@ -613,20 +595,8 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:gravity="center"
-                    android:text="@string/texto_trancoso" />
-
-                <!-- Comando que coloca o vídeo do YouTube no app -->
-                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    app:videoId="squ-A-cla6k"
-                    android:background="@drawable/borda_arred_black"
-                    android:padding="5dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="8dp"
-                    app:autoPlay="false"
-                    app:showFullScreenButton="true"/>
+                    android:text="@string/texto_trancoso"
+                    android:textColor="@color/padrao" />
 
                 <TextView
                     android:id="@+id/textView11"

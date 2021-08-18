@@ -116,5 +116,22 @@
     <string name="txt_contato">Sinta-se a vontade para nos enviar suas sugestões, críticas ou
         elogios. \n
         Envie também suas dúvidas, responderemos o mais breve possível.</string>
+    <string name="titulo_entrada">ENTRADA</string>
+    <string name="titulo_saida">SAÍDA</string>
+    <string name="titulo_aplicar">CONFIRMAR</string>
+    <string name="titulo_escolha_quarto">ESCOLHA O QUARTO DESEJADO</string>
+    <string name="titulo_quarto2">SUÍTE KING COM VARANDA</string>
+    <string name="titulo_quarto3">SUÍTE DUPLEX</string>
+    <string name="titulo_opcao_quarto1">SUÍTE MASTER</string>
+    <string name="titulo_opcao_quarto2">SUÍTE KING</string>
+    <string name="titulo_opcao_quarto3">SUÍTE DUPLEX</string>
+    <string name="txt_duvida_quarto">Está com dúvida sobre os quartos?</string>
+    <string name="titulo_saiba_mais">SAIBA MAIS!</string>
+    <string name="txt_limpar">Limpar</string>
+    <string name="txt_serv_bar">Com isso, além das principais refeições diárias, você terá coberto pelo sistema o consumo livre de bebidas (alcoólicas ou não), petiscos, lanches e até mesmo atrações disponíveis no resort, dependendo do pacote escolhido.</string>
+    <string name="txt_serv_yoga">Que tal você assistir o nascer do sol na icônica Praia de Porto Seguro enquanto pratica uma aula de yoga e meditação, mantendo distanciamento, obviamente, e depois se deleitar com um reforçado café da manhã?</string>
+    <string name="txt_serv_sauna">No Hotel Imperial disponibilizamos uma sauna natural ( 47 ° à 53°). Nossa sauna é mista e aproximadamente cabem 10 pessoas. Você pode desfrutar também do nosso ofurô que tem a capacidade pra 20 pessoas.</string>
+    <string name="txt_serv_cafe">O café da manhã do Hotel Imperial é a maneira mais deliciosa de começar um dia bem disposto para o lazer ou para o trabalho.   O espaço , tranquilo, aconchegante e com um ótimo atendimento, o deixará à vontade para desfrutar a variedade de nosso buffet. Oferecemos produtos caseiros, preparados no próprio hotel, como bolos, pães,  diversos salgados e doces.</string>
+    <string name="txt_quarto">Quarto Escolhido</string>
 
 </resources>

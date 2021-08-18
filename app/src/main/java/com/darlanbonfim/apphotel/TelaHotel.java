@@ -16,6 +16,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
+import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -30,8 +31,8 @@ public class TelaHotel extends AppCompatActivity implements NavigationView.OnNav
     Button btnReserva;
 
     // Animações
-    LinearLayout layConteudo;
-    Animation animItens;
+    Animation animItens, animItens2;
+    TextView txtTituloHotel, txtTextoHotel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +58,21 @@ public class TelaHotel extends AppCompatActivity implements NavigationView.OnNav
         navigationView.bringToFront();
         navigationView.setNavigationItemSelectedListener(this);
 
+        // Comando para mostrar ou ocultar o itens do menu;
+        android.view.Menu menu = navigationView.getMenu();
+        menu.findItem(R.id.menu_logoff).setVisible(false);
+        menu.findItem(R.id.menu_MinhaConta).setVisible(false);
+
+        // Ligação dos objetos;
+        txtTituloHotel = findViewById(R.id.txtTituloHotel);
+        txtTextoHotel = findViewById(R.id.txtTextoHotel);
+
+        // Animação;
+        animItens = AnimationUtils.loadAnimation(this, R.anim.anim_itens);
+        animItens2 = AnimationUtils.loadAnimation(this, R.anim.anim_itens2);
+        txtTituloHotel.setAnimation(animItens2);
+        txtTextoHotel.setAnimation(animItens);
+
         // CONFIGURAÇÕES ESPECIFICAS DA TELA =======================================================
 
         // Configuração do botão Reserva;
@@ -69,11 +85,6 @@ public class TelaHotel extends AppCompatActivity implements NavigationView.OnNav
                 finish();
             }
         });
-
-        // Animações;
-        layConteudo = findViewById(R.id.layConteudo);
-        animItens = AnimationUtils.loadAnimation(this, R.anim.anim_itens);
-        layConteudo.setAnimation(animItens);
 
     }
 

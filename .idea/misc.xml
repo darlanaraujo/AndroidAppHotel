@@ -6,6 +6,7 @@
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.24270833333333333" />
         <entry key="app/src/main/res/drawable/borda_arred_black.xml" value="0.24270833333333333" />
         <entry key="app/src/main/res/drawable/borda_arred_cinza.xml" value="0.25729166666666664" />
+        <entry key="app/src/main/res/drawable/borda_arred_padrao.xml" value="0.24270833333333333" />
         <entry key="app/src/main/res/drawable/borda_arredondada.xml" value="0.24270833333333333" />
         <entry key="app/src/main/res/drawable/ic_login.xml" value="0.24270833333333333" />
         <entry key="app/src/main/res/drawable/ic_login_user.xml" value="0.24270833333333333" />
@@ -25,7 +26,11 @@
         <entry key="app/src/main/res/layout/pop_quarto1.xml" value="0.2265625" />
         <entry key="app/src/main/res/layout/pop_quarto2.xml" value="0.2265625" />
         <entry key="app/src/main/res/layout/pop_quarto3.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/pop_serv_quarto.xml" value="0.18029350104821804" />
+        <entry key="app/src/main/res/layout/pop_serv_bar.xml" value="0.2265625" />
+        <entry key="app/src/main/res/layout/pop_serv_cafe.xml" value="0.2265625" />
+        <entry key="app/src/main/res/layout/pop_serv_quarto.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/pop_serv_sauna.xml" value="0.2265625" />
+        <entry key="app/src/main/res/layout/pop_serv_yoga.xml" value="0.2265625" />
         <entry key="app/src/main/res/layout/tela_principal.xml" value="0.25" />
         <entry key="app/src/main/res/layout/topo.xml" value="0.33" />
         <entry key="app/src/main/res/menu/menu.xml" value="0.25" />

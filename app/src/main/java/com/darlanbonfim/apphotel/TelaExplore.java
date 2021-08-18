@@ -59,12 +59,17 @@ public class TelaExplore extends AppCompatActivity implements NavigationView.OnN
         navigationView.bringToFront();
         navigationView.setNavigationItemSelectedListener(this);
 
-        // CONFIGURAÇÕES ESPECIFICAS DA TELA =======================================================
+        // Comando para mostrar ou ocultar o itens do menu;
+        android.view.Menu menu = navigationView.getMenu();
+        menu.findItem(R.id.menu_logoff).setVisible(false);
+        menu.findItem(R.id.menu_MinhaConta).setVisible(false);
 
-        // Animação;
-        animItens = AnimationUtils.loadAnimation(this, R.anim.anim_itens);
+        // Animações;
         layConteudo = findViewById(R.id.layConteudo);
+        animItens = AnimationUtils.loadAnimation(this, R.anim.anim_itens);
         layConteudo.setAnimation(animItens);
+
+        // CONFIGURAÇÕES ESPECIFICAS DA TELA =======================================================
 
         // Configuração do botão Reserva;
         btnReserva = findViewById(R.id.btnReserva);

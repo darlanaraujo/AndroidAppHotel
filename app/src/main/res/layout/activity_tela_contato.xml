@@ -5,6 +5,7 @@
     android:id="@+id/draw_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".TelaContato"
     tools:openDrawer="start">
 
@@ -152,7 +153,7 @@
                     android:orientation="vertical">
 
                     <EditText
-                        android:id="@+id/TextNome"
+                        android:id="@+id/textNome"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
@@ -166,7 +167,7 @@
                         android:padding="10dp" />
 
                     <EditText
-                        android:id="@+id/TextEmail"
+                        android:id="@+id/textEmail"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
@@ -180,7 +181,7 @@
                         android:padding="10dp" />
 
                     <EditText
-                        android:id="@+id/TextFone"
+                        android:id="@+id/textFone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
@@ -194,7 +195,7 @@
                         android:padding="10dp" />
 
                     <EditText
-                        android:id="@+id/TextMensagem"
+                        android:id="@+id/textMensagem"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
@@ -202,9 +203,11 @@
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/borda_arred_cinza"
                         android:ems="10"
-                        android:gravity="start|top"
+                        android:gravity="start"
                         android:hint="Mensagem"
-                        android:inputType="textMultiLine"
+                        android:inputType="textImeMultiLine"
+                        android:maxWidth="300dp"
+                        android:maxHeight="150dp"
                         android:minHeight="150dp"
                         android:padding="10dp" />
 

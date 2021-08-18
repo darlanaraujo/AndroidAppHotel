@@ -30,11 +30,10 @@ public class TelaAcomodacoes extends AppCompatActivity implements NavigationView
     // Atributos
     Button btnReserva;
 
-    ImageButton btnQuarto1, btnQuarto2, btnQuarto3;
 
     // Animação;
-    Animation animItens;
-    LinearLayout layConteudo;
+    Animation animItens, animItens2;
+    ImageButton btnQuarto1, btnQuarto2, btnQuarto3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,12 +59,24 @@ public class TelaAcomodacoes extends AppCompatActivity implements NavigationView
         navigationView.bringToFront();
         navigationView.setNavigationItemSelectedListener(this);
 
-        // CONFIGURAÇÕES ESPECIFICAS DA TELA =======================================================
+        // Comando para mostrar ou ocultar o itens do menu;
+        android.view.Menu menu = navigationView.getMenu();
+        menu.findItem(R.id.menu_logoff).setVisible(false);
+        menu.findItem(R.id.menu_MinhaConta).setVisible(false);
+
+        // Ligação dos objetos;
+        btnQuarto1 = findViewById(R.id.btnQuarto1);
+        btnQuarto2 = findViewById(R.id.btnQuarto2);
+        btnQuarto3 = findViewById(R.id.btnQuarto3);
 
         // Animação;
         animItens = AnimationUtils.loadAnimation(this, R.anim.anim_itens);
-        layConteudo = findViewById(R.id.layConteudo);
-        layConteudo.setAnimation(animItens);
+        animItens2 = AnimationUtils.loadAnimation(this, R.anim.anim_itens2);
+        btnQuarto1.setAnimation(animItens);
+        btnQuarto2.setAnimation(animItens2);
+        btnQuarto3.setAnimation(animItens);
+
+        // CONFIGURAÇÕES ESPECIFICAS DA TELA =======================================================
 
         // Configiração do Botão Reserva;
         btnReserva = findViewById(R.id.btnReserva);

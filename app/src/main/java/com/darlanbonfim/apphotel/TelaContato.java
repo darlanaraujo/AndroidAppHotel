@@ -1,21 +1,26 @@
 package com.darlanbonfim.apphotel;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.snackbar.Snackbar;
 
 public class TelaContato extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -25,8 +30,11 @@ public class TelaContato extends AppCompatActivity implements NavigationView.OnN
     Toolbar toolbar;
 
     // Animações
-    LinearLayout layConteudo;
-    Animation animItens;
+    Animation animItens, animItens2;
+
+    // Atributos da tela;
+    EditText textNome, textEmail, textFone, textMensagem;
+    Button btnEnviar, btnLimpar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,13 +59,46 @@ public class TelaContato extends AppCompatActivity implements NavigationView.OnN
         // Comando para colocar uma seleção ao clicar no menu;
         navigationView.bringToFront();
         navigationView.setNavigationItemSelectedListener(this);
+        navigationView.setCheckedItem(R.id.menu_home);
+
+        // Comando para mostrar ou ocultar o itens do menu;
+        android.view.Menu menu = navigationView.getMenu();
+        menu.findItem(R.id.menu_logoff).setVisible(false);
+        menu.findItem(R.id.menu_MinhaConta).setVisible(false);
+
+        // Ligação dos objetos;
+        textNome = findViewById(R.id.textNome);
+        textEmail = findViewById(R.id.textEmail);
+        textFone = findViewById(R.id.textFone);
+        textMensagem = findViewById(R.id.textMensagem);
+
+        // Animações;
+        animItens = AnimationUtils.loadAnimation(this, R.anim.anim_itens);
+        animItens2 = AnimationUtils.loadAnimation(this, R.anim.anim_itens2);
+        textNome.setAnimation(animItens2);
+        textEmail.setAnimation(animItens2);
+        textFone.setAnimation(animItens);
+        textMensagem.setAnimation(animItens);
 
         // CONFIGURAÇÕES ESPECIFICAS DA TELA =======================================================
 
-        // Animações;
-        layConteudo = findViewById(R.id.layConteudo);
-        animItens = AnimationUtils.loadAnimation(this, R.anim.anim_itens);
-        layConteudo.setAnimation(animItens);
+        // Configuração do botão Enviar;
+        btnEnviar = findViewById(R.id.btnEnviar);
+        btnEnviar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setVerifica();
+            }
+        });
+
+        // Configuração do botão Limpar;
+        btnLimpar = findViewById(R.id.btnLimpar);
+        btnLimpar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setLimpar();
+            }
+        });
 
     }
 
@@ -103,5 +144,52 @@ public class TelaContato extends AppCompatActivity implements NavigationView.OnN
     }
 
     // CONFIGURAÇÕES ESPECIFICAS DA TELA =======================================================
+
+    public void setLimpar(){
+        textNome.setText("");
+        textEmail.setText("");
+        textFone.setText("");
+        textMensagem.setText("");
+        textNome.isFocusable();
+    }
+
+    public void setVerifica(){
+
+        boolean dados = true;
+
+        if(textNome.getText().toString().trim().isEmpty()){
+            dados = false;
+            textNome.setError("Opss! Você esqueceu esse campo");
+            Snackbar.make(textNome , "Por favor informe seu Nome!", Snackbar.LENGTH_LONG).setAction("Erro!", null).show();
+        } else if(textEmail.getText().toString().trim().isEmpty()){
+            dados = false;
+            textEmail.setError("Opss! Você esqueceu esse campo");
+            Snackbar.make(textEmail, "Por favor informe seu Email!", Snackbar.LENGTH_LONG).setAction("Erro!", null).show();
+        } else if(textFone.getText().toString().trim().isEmpty()){
+            dados = false;
+            textFone.setError("Opss! Você esqueceu esse campo");
+            Snackbar.make(textFone, "Por favor informe seu Celular!", Snackbar.LENGTH_LONG).setAction("Erro!", null).show();
+        } else if(textMensagem.getText().toString().trim().isEmpty()){
+            dados = false;
+            textMensagem.setError("Opss! Você esqueceu esse campo");
+            Snackbar.make(textMensagem, "Por favor informe sua Mensagem!", Snackbar.LENGTH_LONG).setAction("Erro!", null).show();
+        }
+
+        if(dados){
+            AlertDialog.Builder pop = new AlertDialog.Builder(this);
+            pop.setIcon(R.drawable.icone_g);
+            pop.setTitle("Confirmação");
+            pop.setMessage("Agradecemos o seu contato! Mensagem enviada com sucesso!");
+            pop.setNeutralButton("Voltar", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+
+                }
+            });
+
+            pop.show();
+            setLimpar();
+        }
+    }
 
 }
