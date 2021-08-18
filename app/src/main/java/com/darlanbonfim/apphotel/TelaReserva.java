@@ -109,6 +109,8 @@ public class TelaReserva extends AppCompatActivity implements NavigationView.OnN
         txtEntrada = findViewById(R.id.txtEntrada);
         txtSaida = findViewById(R.id.txtSaida);
 
+        // Comando para limpar os textos ao iniciar a tela;
+        txtQuarto.setText("");
         txtEntrada.setText(""); // Comando para deixar o objeto vazio;
         txtSaida.setText(""); // Comando para deixar o objeto vazio;
 
