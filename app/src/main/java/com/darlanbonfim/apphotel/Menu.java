@@ -144,7 +144,6 @@ public class Menu extends AppCompatActivity implements NavigationView.OnNavigati
 
                         ActivityCompat.finishAffinity((Activity) context);
 
-
                     }
                 });
 
