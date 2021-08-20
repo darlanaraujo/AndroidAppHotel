@@ -17,9 +17,11 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.VideoView;
 
 import com.google.android.material.navigation.NavigationView;
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 
 public class TelaExplore extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -32,8 +34,9 @@ public class TelaExplore extends AppCompatActivity implements NavigationView.OnN
     Button btnReserva;
 
     // Animação;
-    Animation animItens;
-    LinearLayout layConteudo;
+    Animation animItens, animItens2;
+    TextView txtTituloCabralia, txtTextoCabralia;
+    YouTubePlayerView playVideo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,10 +67,17 @@ public class TelaExplore extends AppCompatActivity implements NavigationView.OnN
         menu.findItem(R.id.menu_logoff).setVisible(false);
         menu.findItem(R.id.menu_MinhaConta).setVisible(false);
 
+        // Ligação dos objetos;
+        txtTituloCabralia = findViewById(R.id.txtTituloCabralia);
+        txtTextoCabralia = findViewById(R.id.txtTextoCabralia);
+        playVideo = findViewById(R.id.playVideo);
+
         // Animações;
-        layConteudo = findViewById(R.id.layConteudo);
         animItens = AnimationUtils.loadAnimation(this, R.anim.anim_itens);
-        layConteudo.setAnimation(animItens);
+        animItens2 = AnimationUtils.loadAnimation(this, R.anim.anim_itens2);
+        txtTituloCabralia.setAnimation(animItens2);
+        txtTextoCabralia.setAnimation(animItens);
+        playVideo.setAnimation(animItens);
 
         // CONFIGURAÇÕES ESPECIFICAS DA TELA =======================================================
 

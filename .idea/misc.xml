@@ -11,6 +11,7 @@
         <entry key="app/src/main/res/drawable/ic_login.xml" value="0.24270833333333333" />
         <entry key="app/src/main/res/drawable/ic_login_user.xml" value="0.24270833333333333" />
         <entry key="app/src/main/res/drawable/ic_menu.xml" value="0.24270833333333333" />
+        <entry key="app/src/main/res/drawable/pop_serv_jogos.xml" value="0.25729166666666664" />
         <entry key="app/src/main/res/drawable/slide_fotos.xml" value="0.24270833333333333" />
         <entry key="app/src/main/res/layout/activity_tela_acomodacoes.xml" value="0.2265625" />
         <entry key="app/src/main/res/layout/activity_tela_contato.xml" value="0.2125" />
@@ -26,9 +27,14 @@
         <entry key="app/src/main/res/layout/pop_quarto1.xml" value="0.2265625" />
         <entry key="app/src/main/res/layout/pop_quarto2.xml" value="0.2265625" />
         <entry key="app/src/main/res/layout/pop_quarto3.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/pop_serv_academia.xml" value="0.22962962962962963" />
+        <entry key="app/src/main/res/layout/pop_serv_baby.xml" value="0.22962962962962963" />
         <entry key="app/src/main/res/layout/pop_serv_bar.xml" value="0.2265625" />
         <entry key="app/src/main/res/layout/pop_serv_cafe.xml" value="0.2265625" />
+        <entry key="app/src/main/res/layout/pop_serv_jogos.xml" value="0.22962962962962963" />
+        <entry key="app/src/main/res/layout/pop_serv_lazer.xml" value="0.22962962962962963" />
         <entry key="app/src/main/res/layout/pop_serv_quarto.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/pop_serv_restaurante.xml" value="0.22962962962962963" />
         <entry key="app/src/main/res/layout/pop_serv_sauna.xml" value="0.2265625" />
         <entry key="app/src/main/res/layout/pop_serv_yoga.xml" value="0.2265625" />
         <entry key="app/src/main/res/layout/tela_principal.xml" value="0.25" />

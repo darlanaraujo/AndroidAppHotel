@@ -141,7 +141,10 @@ public class Menu extends AppCompatActivity implements NavigationView.OnNavigati
                 pop.setPositiveButton("Sair", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        finish();
+
+                        ActivityCompat.finishAffinity((Activity) context);
+
+
                     }
                 });
 

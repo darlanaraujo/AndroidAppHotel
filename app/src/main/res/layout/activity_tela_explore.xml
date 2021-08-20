@@ -238,7 +238,7 @@
                     app:srcCompat="@drawable/linha2" />
 
                 <TextView
-                    android:id="@+id/textView13"
+                    android:id="@+id/txtTituloCabralia"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
@@ -248,7 +248,7 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/textView15"
+                    android:id="@+id/txtTextoCabralia"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
@@ -258,6 +258,7 @@
 
                 <!-- Comando que coloca o vídeo do YouTube no app -->
                 <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:id="@+id/playVideo"
                     android:layout_width="300dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"

@@ -261,7 +261,7 @@ public class TelaServicos extends AppCompatActivity implements NavigationView.On
 
         // Comando para mostrar uma página dentro de um Alerta;
         LayoutInflater imgServicos = LayoutInflater.from(TelaServicos.this);
-        final View tela = imgServicos.inflate(R.layout.pop_serv_quarto, null);
+        final View tela = imgServicos.inflate(R.layout.pop_serv_academia, null);
         AlertDialog.Builder pop = new AlertDialog.Builder(TelaServicos.this);
 
         btnReserva = tela.findViewById(R.id.btnReserva);
@@ -282,7 +282,7 @@ public class TelaServicos extends AppCompatActivity implements NavigationView.On
 
         // Comando para mostrar uma página dentro de um Alerta;
         LayoutInflater imgServicos = LayoutInflater.from(TelaServicos.this);
-        final View tela = imgServicos.inflate(R.layout.pop_serv_quarto, null);
+        final View tela = imgServicos.inflate(R.layout.pop_serv_baby, null);
         AlertDialog.Builder pop = new AlertDialog.Builder(TelaServicos.this);
 
         btnReserva = tela.findViewById(R.id.btnReserva);
@@ -303,7 +303,7 @@ public class TelaServicos extends AppCompatActivity implements NavigationView.On
 
         // Comando para mostrar uma página dentro de um Alerta;
         LayoutInflater imgServicos = LayoutInflater.from(TelaServicos.this);
-        final View tela = imgServicos.inflate(R.layout.pop_serv_quarto, null);
+        final View tela = imgServicos.inflate(R.layout.pop_serv_jogos, null);
         AlertDialog.Builder pop = new AlertDialog.Builder(TelaServicos.this);
 
         btnReserva = tela.findViewById(R.id.btnReserva);
@@ -324,7 +324,7 @@ public class TelaServicos extends AppCompatActivity implements NavigationView.On
 
         // Comando para mostrar uma página dentro de um Alerta;
         LayoutInflater imgServicos = LayoutInflater.from(TelaServicos.this);
-        final View tela = imgServicos.inflate(R.layout.pop_serv_quarto, null);
+        final View tela = imgServicos.inflate(R.layout.pop_serv_lazer, null);
         AlertDialog.Builder pop = new AlertDialog.Builder(TelaServicos.this);
 
         btnReserva = tela.findViewById(R.id.btnReserva);
@@ -345,7 +345,7 @@ public class TelaServicos extends AppCompatActivity implements NavigationView.On
 
         // Comando para mostrar uma página dentro de um Alerta;
         LayoutInflater imgServicos = LayoutInflater.from(TelaServicos.this);
-        final View tela = imgServicos.inflate(R.layout.pop_serv_quarto, null);
+        final View tela = imgServicos.inflate(R.layout.pop_serv_restaurante, null);
         AlertDialog.Builder pop = new AlertDialog.Builder(TelaServicos.this);
 
         btnReserva = tela.findViewById(R.id.btnReserva);
